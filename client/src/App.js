@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/header/header';
+import './App.scss';
+import Homepage from './pages/homepage/homepage';
+import { Route, Switch} from 'react-router-dom';
+import ServicesPage from './pages/services-page/services-page';
+import Footer from './components/footer/footer';
+import NavigationModal from './components/modals/navigation-modal';
+import ProductsPage from './pages/products-page/products-page';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default ()=>{
+    return (
+        <div className='App'>
+        <Header/>
+        
+        <Switch>
+            <Route exact path='/' component={Homepage} />
+            {/* <Route path='/services' component={ServicesPage} />        
+            <Route path='/shop' component={ProductsPage} />   */}
+        </Switch>
+
+        <Footer/>
+
+        {/* <NavigationModal/> */}
+
+        </div>
+    );
 }
-
-export default App;

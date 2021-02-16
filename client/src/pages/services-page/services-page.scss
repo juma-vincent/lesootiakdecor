@@ -1,0 +1,62 @@
+.services-page-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;   
+    background-color: white;
+
+        .events-planning-container{
+            display: flex;
+            flex-direction: column;
+            
+                .events-planning-title{
+                    font-size: 19px;
+                    color: chartreuse;
+                    animation-name: moveInFromLeft;
+                    animation-duration: 1.5s;
+                    animation-timing-function: ease-out;
+                    
+                }
+
+                .events-planning-content{
+                    width: 50%;            
+                    align-self: center;
+                    margin-bottom: 10px;
+                    padding: 20px;
+                    animation: moveInFromRight 1.5s ease-out; // shorthand for name, duration, timing-func 
+                    
+                }
+
+            @keyframes moveInFromRight{
+                0%{
+                    opacity: 0;
+                    transform: translateX(100px);
+                }
+
+                80%{
+                    transform: translateX(-10px);
+                } 
+
+                100%{
+                    opacity: 1;
+                    transform: translateX(0)
+                }
+            }
+
+            @keyframes moveInFromLeft{
+                0%{
+                    opacity: 0;
+                    transform: translateX(-100px);
+                }
+
+                80%{
+                    transform: translateX(10px);
+                } 
+
+                100%{
+                    opacity: 1;
+                    transform: translateX(0)
+                }
+            }
+        }
+
+}

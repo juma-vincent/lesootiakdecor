@@ -1,0 +1,39 @@
+.menu-icon-container{
+    height: 40px;  
+    width: 40px; 
+    background-color: rgb(206, 216, 216); 
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    opacity:  0;    
+    
+    .menu-icon-bars{       
+        margin-top: 20px;
+        position: relative;
+        &,
+        &::before,
+        &::after{
+        width: 20px;
+        height: 2px;        
+        background-color: black;
+        display: inline-block;
+        }
+
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+    
+        &::before{ top: -7px;}
+        &::after{top: 7px;}
+
+        
+    }
+
+    @media screen and (max-width: 800px) {
+                                    
+        opacity: 1;
+    }
+}
