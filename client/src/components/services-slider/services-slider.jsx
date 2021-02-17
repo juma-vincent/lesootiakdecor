@@ -1,33 +1,32 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Arrow from '../arrow/arrow';
 import Slide from '../slide/slide';
-import './banner-slider.scss';
-import { ImageSliderContainer} from './banner-slider.styles';
+import { ImageSliderContainer} from './services-slider.styles';
 
 const bannerData=[
-{title:'Lesootia K Decor', 
-subtitle:'Get your delivery in minutes', 
-buttonText:'SHOP WITH US',
-link:'/shop',
-imageUrl:'/images/img1.jpg'},
+{title:'Events Planning Services', 
+subtitle:'We save your time in organinzing your events', 
+buttonText:'BOOK NOW',
+link:'',
+imageUrl:'/images/image1.jpg'},
 
-{title:'FRESH FLOWERS', 
-subtitle:'Guaranteed Quality.', 
+{title:'', 
+subtitle:'.', 
 buttonText:'',
 link:'',
-imageUrl:'/images/img2.jpg'},
+imageUrl:'/images/image4.jpg'},
 
 {title:'', 
 subtitle:'', 
 buttonText:'',
 link:'',
-imageUrl:'/images/img5.jpg'},
+imageUrl:'/images/image3.jpg'},
 
 ]
 
 
 
-const BannerSlider = ({autoPlay}) => {
+const ServicesSlider = ({autoPlay}) => {
     const [x, setX] = useState(0);
 
     const autoPlayRef = useRef();
@@ -48,12 +47,12 @@ const BannerSlider = ({autoPlay}) => {
       },[])
 
     const goLeft= ()=>{
-        x === 0? setX(-100*(bannerData.length -1)) : setX(x+100);        
+        x === 0? setX(-100*(bannerData.length -1)) : setX(x+100);             
         
     }
 
     const goRight= ()=>{
-        (x === -100*(bannerData.length -1))? setX(0) : setX(x-100);        
+        (x === -100*(bannerData.length -1))? setX(0) : setX(x-100);              
     }
 
     return (
@@ -78,4 +77,4 @@ const BannerSlider = ({autoPlay}) => {
       );
 }
  
-export default BannerSlider;
+export default ServicesSlider;

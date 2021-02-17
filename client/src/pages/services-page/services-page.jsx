@@ -1,23 +1,20 @@
 import React from 'react';
 import './services-page.scss';
 import Spinner from '../../components/spinner/spinner'
+import ServicesSlider from '../../components/services-slider/services-slider';
 
 const ServicesPage = () => {
     return ( 
     <div className='services-page-container'>
+        < ServicesSlider autoPlay={7}/>
         <div className='events-planning-container'>
-            <h3 className='events-planning-title'>About Events</h3>
+            <h3 className='events-planning-title'> Events we Organize</h3>
             <div className='events-planning-content'>
-                I organize events such as weddings, birthdays and so on.
-                I organize events such as weddings, birthdays and so on.
-                I organize events such as weddings, birthdays and so on.
-                I organize events such as weddings, birthdays and so on.
-                I organize events such as weddings, birthdays and so on.
-                I organize events such as weddings, birthdays and so on.
+                We carry out planning on birthdays, weddings, at a friendly price.
                 
             </div>
             <div>
-                <Spinner/>
+                {/* <Spinner/> */}
                 
             </div>
             

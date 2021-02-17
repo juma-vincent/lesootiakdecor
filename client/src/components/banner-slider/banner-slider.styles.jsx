@@ -8,7 +8,7 @@ export const ImageSliderContainer = styled.div`
     display: flex;    
     position: relative;
     overflow: hidden;
-    border: solid blue 2px;
+    
     
     
 

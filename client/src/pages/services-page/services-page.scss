@@ -7,13 +7,17 @@
         .events-planning-container{
             display: flex;
             flex-direction: column;
+            box-shadow: 0.5px 2px 5px rgb(177, 170, 170); 
+            margin: 20px;
+            padding: 20px;
+            
             
                 .events-planning-title{
                     font-size: 19px;
-                    color: chartreuse;
-                    animation-name: moveInFromLeft;
-                    animation-duration: 1.5s;
-                    animation-timing-function: ease-out;
+                    color: gray;
+                    // animation-name: moveInFromLeft;
+                    // animation-duration: 1.5s;
+                    // animation-timing-function: ease-out;
                     
                 }
 
@@ -22,7 +26,7 @@
                     align-self: center;
                     margin-bottom: 10px;
                     padding: 20px;
-                    animation: moveInFromRight 1.5s ease-out; // shorthand for name, duration, timing-func 
+                    // animation: moveInFromRight 1.5s ease-out; // shorthand for name, duration, timing-func 
                     
                 }
 
