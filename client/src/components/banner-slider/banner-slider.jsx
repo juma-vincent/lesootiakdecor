@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Arrow from '../arrow/arrow';
+import Dots from '../dots/dots';
 import Slide from '../slide/slide';
 import './banner-slider.scss';
 import { ImageSliderContainer} from './banner-slider.styles';
@@ -71,8 +72,9 @@ const BannerSlider = ({autoPlay}) => {
                     />
                 )
             }
-            <Arrow direction='left' handleClick={goLeft}/>
-            <Arrow direction='right' handleClick={goRight}/>
+            {/* <Arrow direction='left' handleClick={goLeft}/>
+            <Arrow direction='right' handleClick={goRight}/> */}
+            <Dots arraydata={bannerData} activeIndex={x}/>
             
         </ImageSliderContainer>
       );

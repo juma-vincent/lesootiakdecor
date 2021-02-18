@@ -6,7 +6,7 @@ import ServicesSlider from '../../components/services-slider/services-slider';
 const ServicesPage = () => {
     return ( 
     <div className='services-page-container'>
-        < ServicesSlider autoPlay={7}/>
+        < ServicesSlider autoPlay={6}/>
         <div className='events-planning-container'>
             <h3 className='events-planning-title'> Events we Organize</h3>
             <div className='events-planning-content'>

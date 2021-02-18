@@ -27,23 +27,25 @@ export const TextAndButtonContainer = styled.div`
       top: 10%;
       left: 25%;
       text-shadow: 1px 1px 1px black;
-      
-      
-      
+      color: blue;
+      backface-visibility: hidden;
+                             
 
                   h1{
                         font-weight:bold;
                         color: white;
                         text-align: start;
                         text-shadow: 1px 1px 1px rgba(21, 28, 58, 0.98) ;
-
-                        animation: moveInFromRight 1.3s ease-out;
+                        animation: moveInFromRightt 6s ease-out infinite;
+                        
+                        
                   }
                   p{
                         font-size:20px;
                         color: white;
                         text-align: start;
-                        animation: moveInFromLeft 1.3s ease-out;
+                        animation: moveInFromLeftt 6s ease-out infinite;                        
+                        
                         
                   }
 
@@ -58,10 +60,9 @@ export const TextAndButtonContainer = styled.div`
                   border: rgba(21, 28, 58, 0.38);
                   cursor: pointer;
                   font-family: Yu Gothic UI;
-
-                  animation-name: moveInFromRight;
-                  animation-duration: 1.3s;
-                  animation-timing-function: ease-out;
+                  animation: moveInFromRightt 6s ease-out infinite;
+                  
+                  
                   
 
                   }
@@ -77,39 +78,44 @@ export const TextAndButtonContainer = styled.div`
             
       }
 
-      @keyframes moveInFromRight{
-            0%{
-                opacity: 0;
-                transform: translateX(100px);
+      @keyframes moveInFromRightt {
+            20%  {
+              opacity: 1;
+              transform: translateX(-30px);
+            }            
+
+            100%  {
+                  opacity: 1;
+                  transform: translateX(10px);
+                }
+
+            0% {
+              opacity: 0;
             }
-
-            80%{
-                transform: translateX(-5px);
-            } 
-
-            100%{
-                opacity: 1;
-                transform: translateX(0)
+            10% {
+              opacity: 1;
             }
-      }
+          }
 
-      @keyframes moveInFromLeft{
-            0%{
-                opacity: 0;
-                transform: translateX(-100px);
+          @keyframes moveInFromLeftt {
+            20%  {
+              opacity: 1;
+              transform: translateX(30px);
             }
+            100%  {
+                  opacity: 1;
+                  transform: translateX(10px);
+                }
 
-            80%{
-                transform: translateX(5px);
-            } 
-
-            100%{
-                opacity: 1;
-                transform: translateX(0)
+            0% {
+              opacity: 0;
             }
-      }
+            10% {
+              opacity: 1;
+            }
+          }
 
-      
+
+
 
 `;
-

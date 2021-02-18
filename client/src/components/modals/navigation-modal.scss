@@ -12,7 +12,7 @@
     .modal-title{
         top: 3%;
         left: 15%;
-        background-color:white;
+        background-color:rgb(255, 166, 225);
         width: 50vw;
         // height: 60vh;
         position: absolute;
@@ -29,9 +29,9 @@
                 list-style: none;
                 padding: 5px;
                 >li{
-                    margin: 5px;
+                    margin: 10px;
                     // border-bottom: rgb(119, 114, 114) solid 0.6px;
-                    box-shadow: 0px 1px 1px rgb(194, 189, 189);
+                    box-shadow: 0px 1px 1px white;
                     padding: 8px ;
                     border-radius: 3px;
                 }

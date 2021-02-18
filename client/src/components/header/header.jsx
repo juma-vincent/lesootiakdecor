@@ -15,6 +15,7 @@ import { toggleNavigationOpen } from "../../redux/modals/modal-actions";
 
 
 
+
 const Header = ({toggleNavigationOpen , match}) => {  
   return (
     
@@ -31,12 +32,14 @@ const Header = ({toggleNavigationOpen , match}) => {
                     {/* <a  href="https://wa.me/254712062516" >
                     <Option text='whatsapp'/>
                     </a> */}
+
                     <div onClick ={()=>toggleNavigationOpen()}>
-                    <MenuIcon width='20px' height='20px' style={{marginLeft:'32px'}}/>
-                    </div>
-                    {/* <div id='cart-icon-small-screen'>
-                      < CartIcon width='30px' height='30px' style={{marginLeft:'150%'}}/>
-                    </div>                   */}
+                    <MenuIcon width='20px' height='20px'/>
+                    </div>  
+                    
+                    <div id='cart-icon-small-screen'>
+                      < CartIcon width='30px' height='30px' style={{marginLeft:'170%'}}/>
+                    </div>                                    
                     
                     <Link to="/" >
                     <Option text='Home'/>
@@ -47,6 +50,7 @@ const Header = ({toggleNavigationOpen , match}) => {
                     <Link to="/shop">
                     <Option text='Flowers'/>
                     </Link>
+                    
                     
                     {match.isExact?
                     (<>

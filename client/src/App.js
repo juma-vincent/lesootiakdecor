@@ -17,12 +17,12 @@ export default ()=>{
         <Switch>
             <Route exact path='/' component={Homepage} />
             <Route path='/services' component={ServicesPage} />        
-            {/* <Route path='/shop' component={ProductsPage} />   */}
+            <Route path='/shop' component={ProductsPage} />  
         </Switch>
 
         <Footer/>
 
-        {/* <NavigationModal/> */}
+        <NavigationModal/>
 
         </div>
     );

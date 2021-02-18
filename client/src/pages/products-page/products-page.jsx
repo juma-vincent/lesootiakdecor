@@ -16,7 +16,7 @@ class ProductsPage extends React.Component {
         {this.state.products?
         (
          <div className="products-page">           
-            
+            <h1 style={{textAlign: 'start', padding:'0 15px'}}>Flowers Page</h1>
             <div className="products">            
               {this.state.products.map((product) => (
                 <ProductItem

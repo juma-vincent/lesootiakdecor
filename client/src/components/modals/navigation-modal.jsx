@@ -26,7 +26,7 @@ const NavigationModal = ({isNavtoggleOpen, toggleNavigationOpen, match}) => {
                         
                         <li onClick={() => toggleNavigationOpen()}><Link to='/'>Home</Link></li>                   
                         <li onClick={() => toggleNavigationOpen()}><Link to='/services'>Services</Link></li>                   
-                        <li onClick={() => toggleNavigationOpen()}><Link to='/shop'>FLowers</Link></li> 
+                        <li onClick={() => toggleNavigationOpen()}><Link to='/shop'>Flowers</Link></li> 
                         {match.isExact?
                                 <>
                                 <li>

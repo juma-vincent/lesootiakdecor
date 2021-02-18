@@ -4,12 +4,15 @@ import {  TextAndButtonContainer, ImageWrapper } from './slide.styled';
 import {Link} from 'react-router-dom';
 
 
+
+
+
 const Slide = ({ imageUrl, title, subtitle, buttonText, link, x }) => {
-    
+  
   return(
-    <ImageWrapper imageUrl={imageUrl}  style={{transform:`translateX(${x}%)`}}>
-      <TextAndButtonContainer className={`${ x===0 ? 'do-animate' : ''}`}>
-        <h1>{title}</h1>
+    <ImageWrapper imageUrl={imageUrl} className='textcont' style={{transform:`translateX(${x}%)`}}>
+      <TextAndButtonContainer >
+        <h1 >{title}</h1>
         <p>{subtitle}</p>
         {buttonText? <Link to={link}><button>{buttonText}</button> </Link>: null }
       </TextAndButtonContainer>
