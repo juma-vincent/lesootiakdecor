@@ -3,8 +3,7 @@
     background-color: transparent;
     padding: 0 6px;
     font-size: 16px; 
-    position: relative;   
-    
+        
     // border-bottom: black solid 1.2px;
     border-radius: 6px;        
     font-weight: 500;
@@ -29,6 +28,10 @@
             // box-shadow: 0 5px 10px rgba(134, 106, 106, 0.25);
         
         }
+
+        
+
+        
         
 
     @media screen and (max-width: 800px) {                            
@@ -53,6 +56,29 @@
         transform: scale(1);
         box-shadow: none;
         }
+    }
+}
+
+.icon-present{
+    border: none ;
+    &:hover{
+        color: unset;
+        animation: unset;
+
+        border-color: unset;
+
+    }
+    &:focus {
+        outline: unset;
+        
+        border-color:unset;
+        color: unset
+        
+    
+    }
+
+    .option-icon{
+        margin-left: 5px;
     }
 }
 

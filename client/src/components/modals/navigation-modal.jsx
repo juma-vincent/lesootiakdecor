@@ -7,17 +7,22 @@ import { connect } from 'react-redux';
 import { toggleNavigationOpen } from '../../redux/modals/modal-actions';
 import { Link } from 'react-router-dom';
 import CustomLink from '../custom-link/custom-link';
+import SmallScreenDropDownMenu from '../smallscreen-drop-down/smallscreen-drop-down';
 
 
-const NavigationModal = ({isNavtoggleOpen, toggleNavigationOpen, match}) => {
+const NavigationModal = ({isNavtoggleOpen, toggleNavigationOpen, match, handleToggle}) => {
     
     return ReactDOM.createPortal(
         <>
          {isNavtoggleOpen? 
          (
-         <div className='modal-wrapper' onClick={() => toggleNavigationOpen()}>                
+         <div className='modal-wrapper' onClick={() => toggleNavigationOpen()} >  
+
+          <div onClick={(e) => e.stopPropagation()}>
+              <SmallScreenDropDownMenu  handleToggle={() => toggleNavigationOpen()} className='drop-down'/>
+          </div>              
              
-                <div className='modal-title' onClick={(e) => e.stopPropagation()}>
+                {/* <div className='modal-title' onClick={(e) => e.stopPropagation()}>
                     <div className='x-mark'>
                         <Xmark fill='gray' height='22px' onClick={() => toggleNavigationOpen()}/> 
                     </div>
@@ -51,7 +56,7 @@ const NavigationModal = ({isNavtoggleOpen, toggleNavigationOpen, match}) => {
                         
                     </ul>
                     
-               </div>
+               </div> */}
                 {/* <div className='modal-content'>
                     
                 </div> */}
@@ -75,3 +80,5 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(NavigationModal));
+
+

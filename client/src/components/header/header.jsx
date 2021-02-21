@@ -10,16 +10,18 @@ import CustomLink from "../custom-link/custom-link";
 import { withRouter } from 'react-router-dom';
 import MenuIcon from "../menu-icon/menu-icon";
 import {ReactComponent as CartIcon} from '../../assets/cart.svg';
+import { ReactComponent as DownArrow} from '../../assets/icons/down-arrow11.svg';
 // import GoogleOption from '../google-signin-option/google-signin-option';
 import { toggleNavigationOpen } from "../../redux/modals/modal-actions";
+import DropDownMenu from "../drop-down-menu/drop-down-menu";
 
 
 
 
-const Header = ({toggleNavigationOpen , match}) => {  
+const Header = ({toggleNavigationOpen , match}) => {    
+
   return (
-    
-        
+            
     <div className="header">
       <Link to="/" className="logo-container">
         {/* <img src="/images/jamanu-logo.jpg" alt="" className="logo" />          */}
@@ -47,9 +49,13 @@ const Header = ({toggleNavigationOpen , match}) => {
                     <Link to="/services">
                     <Option text='Services'/>
                     </Link>
-                    <Link to="/shop">
-                    <Option text='Flowers'/>
-                    </Link>
+                    <span>
+                      <Option text='Flowers' icon={<DownArrow fill='gray' height='18px' width='18px'
+                      style={{marginBottom:'-5px'}}
+                      />}>
+                        <DropDownMenu />
+                      </Option>
+                    </span>
                     
                     
                     {match.isExact?
@@ -68,7 +74,7 @@ const Header = ({toggleNavigationOpen , match}) => {
                     {/* <div id='cart-icon-large-screen'>
                     < CartIcon width='25px' height='25px' style={{marginLeft:'0px'}}/>
                     </div> */}
-                      
+                                           
                 </div>
             </div>
 

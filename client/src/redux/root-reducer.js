@@ -1,14 +1,27 @@
 import { combineReducers } from 'redux';
+import cartReducer from './cart/cart.reducer';
 import NavigationToggleReducer from './modals/modals.reducer';
+import shopReducer from './shop/shop.reducer';
+import storage from 'redux-persist/lib/storage';
+import { persistReducer } from 'redux-persist';
+
+
+
+const persistConfig = {
+    key: "root",
+    storage,
+    whitelist: ["cart"],
+};
 
 
 const rootReducer = combineReducers({
-    navtoggle: NavigationToggleReducer
+    navtoggle: NavigationToggleReducer,
+    shop: shopReducer,
+    cart: cartReducer
 })
 
 
-
-export default rootReducer;
+export default persistReducer(persistConfig, rootReducer)
 
 //store.js
 // import { createStore, applyMiddleware } from "redux";

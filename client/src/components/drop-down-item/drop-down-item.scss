@@ -1,0 +1,29 @@
+    .menu-item{
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border-radius:1px;
+        transition: background-color 500ms;        
+        padding: 10px;
+        font-size: 14px;
+        
+        
+
+            &:hover{
+                background-color: rgb(240, 150, 210)
+            }
+
+        @media screen and (max-width: 800px) { 
+            margin: 10px;                    
+            box-shadow: 0px 1px 1px white;
+            padding: 8px ;
+            border-radius: 3px;
+
+        }
+    }
+
+    .icon-right{
+        margin-left: auto;
+    }
+
+    

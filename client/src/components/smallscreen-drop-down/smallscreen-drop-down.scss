@@ -1,0 +1,65 @@
+.smallscreen-drop-down-menu{
+  position: absolute;
+  top: 3%;
+  right:15%;    
+  width: 70vw;            
+  background-color: rgb(255, 166, 225);
+  border-radius: 5px;
+  padding: 10px 0;       
+  padding-bottom: 10px;
+  overflow: hidden;    
+  z-index: 3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: navBarInFromLeft 0.7s ease-out;
+  
+
+      .menu{
+          width: 100%;
+      }
+
+
+
+      .menu-primary-enter{
+              position: absolute;
+              transform: translateX(-110%);
+      }
+
+      .menu-primary-enter-active{
+              transform: translateX(0%);
+              transition: all 500ms ;
+      }
+
+      .menu-primary-exit{
+              position: absolute;
+      }
+
+      .menu-primary-exit-active{
+          transform: translateX(-110%);
+          transition: all  500ms ;
+      }
+
+
+
+
+      .menu-secondary-enter{
+             
+              transform: translateX(110%);
+      }
+
+      .menu-secondary-enter-active{
+          transform: translateX(0%);
+          transition: all 500ms ;
+      }
+
+      .menu-secondary-exit{
+          
+      }
+
+      .menu-secondary-exit-active{
+          transform: translateX(110%);
+          transition: all 500ms ;
+      }
+
+
+      
+}

@@ -9,7 +9,7 @@ export const addNewProduct = ({name, price, imageurl, category}) => async dispat
      category
    });
 
-   dispatch({ type: ADD_NEW_PRODUCT, payload: res.data })
+   dispatch(fetchAllProducts());
 }
 
 export const addNewCategory = ({name, imageurl}) => async dispatch =>{
@@ -18,7 +18,7 @@ export const addNewCategory = ({name, imageurl}) => async dispatch =>{
         imageurl
     });
 
-    dispatch({ type: ADD_NEW_CATEGORY, payload: res.data});
+    dispatch(fetchAllProducts());
 }
 
 export const fetchAllProducts = () => async dispatch=>{
