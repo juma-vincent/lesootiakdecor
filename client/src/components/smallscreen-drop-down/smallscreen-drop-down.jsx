@@ -29,8 +29,7 @@ const SmallScreenDropDownMenu = () => {
           
            >
 
-              <div className="menu">
-                  <DropDownItem>Home</DropDownItem>
+              <div className="menu">                  
                   <DropDownItem>Funerals/Burials</DropDownItem>
                   <DropDownItem>Memorials</DropDownItem>
                   <DropDownItem
