@@ -16,13 +16,14 @@ module.exports = (app)=>{
     })
 
     app.post('/api/new_product', async (req, res)=>{
-        const { name, imageurl, price, category };
+        const { name, imageurl, price, category, subcategory } = req.body;
         
         await new Product({
             name,
             imageurl,
             price,
-            category
+            category,
+            subcategory
         }).save()
 
         res.send('success');

@@ -7,9 +7,10 @@ const productSchema = new Schema({
     imageurl: String,
     price: Number,
     category: String,
+    subcategory: String,
     created: Date,
     popularity : { type: String, default: 'moderate'}
     
 });
 
-mongoose.models('products', productSchema);
+mongoose.model('products', productSchema);

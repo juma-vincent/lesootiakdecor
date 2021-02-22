@@ -1,8 +1,8 @@
 import React, { useState} from "react";
 import "./smallscreen-drop-down.scss";
 import { connect } from "react-redux";
-import { ReactComponent as LeftArrow} from '../../assets/icons/left-arrow-10.svg';
 import { ReactComponent as DownArrow} from '../../assets/icons/down-arrow11.svg';
+import { ReactComponent as LeftArrow} from '../../assets/icons/left-arrow-10.svg';
 
 
 import { CSSTransition } from 'react-transition-group';
@@ -13,7 +13,7 @@ import DropDownItem from "../drop-down-item/drop-down-item";
 
 
 
-const SmallScreenDropDownMenu = ({history, handleToggle}) => {
+const SmallScreenDropDownMenu = () => {
   const [activeMenu, setActiveMenu] = useState('main');
   
   const handleIconClick = (path)=>{
@@ -30,18 +30,9 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
            >
 
               <div className="menu">
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/');
-                      handleToggle()
-                    }}>Home</DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/funerals');
-                      handleToggle()
-                    }}>Funerals/Burials</DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('memorials');
-                      handleToggle()
-                    }}>Memorials</DropDownItem>
+                  <DropDownItem>Home</DropDownItem>
+                  <DropDownItem>Funerals/Burials</DropDownItem>
+                  <DropDownItem>Memorials</DropDownItem>
                   <DropDownItem
                       rightIcon={<DownArrow fill='black' height='13px' width='14px'/>}
                       onIconClick={()=> handleIconClick('giveaways')}
@@ -85,10 +76,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
                   >
                       <h4 style={{marginLeft:'20px', hover:'unset'}}>Giveaways</h4>
                   </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/love-good-wishes');
-                      handleToggle()
-                    }}>Love Good Wishes</DropDownItem>
+                  <DropDownItem >Love Good Wishes</DropDownItem>
                   
               </div>
 
@@ -107,14 +95,8 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
                   >
                       <h4 style={{marginLeft:'20px', hover:'unset'}}>Wedding</h4>
                   </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/Wedding-planning');
-                      handleToggle()
-                    }} > Wedding Planning </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/floral-styling');
-                      handleToggle()
-                    }}> Floral styling</DropDownItem>
+                  <DropDownItem > Wedding Planning </DropDownItem>
+                  <DropDownItem> Floral styling</DropDownItem>
                   
               </div>
 
@@ -133,14 +115,8 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
                   >
                       <h4 style={{marginLeft:'20px', hover:'unset'}}>Meetings</h4>
                   </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/churches');
-                      handleToggle()
-                    }} > Churches </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/general-meetings');
-                      handleToggle()
-                    }}> General Meetings</DropDownItem>
+                  <DropDownItem > Churches </DropDownItem>
+                  <DropDownItem> General Meetings</DropDownItem>
                   
               </div>
 
@@ -160,22 +136,10 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
                   >
                       <h4 style={{marginLeft:'20px', hover:'unset'}}>Events</h4>
                   </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/baby-shower');
-                      handleToggle()
-                    }} > Baby Shower </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/proposal');
-                      handleToggle()
-                    }}> Proposal</DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/birthday');
-                      handleToggle()
-                    }}> Birthday</DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('luncheon');
-                      handleToggle()
-                    }}> Luncheon</DropDownItem>                  
+                  <DropDownItem > Baby Shower </DropDownItem>
+                  <DropDownItem> Proposal</DropDownItem>
+                  <DropDownItem> Birthday</DropDownItem>
+                  <DropDownItem> Luncheon</DropDownItem>                  
                   
               </div>
 
@@ -189,4 +153,4 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
    );
 }
 
-export default withRouter(SmallScreenDropDownMenu);
+export default SmallScreenDropDownMenu;

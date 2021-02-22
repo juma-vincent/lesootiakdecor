@@ -4,9 +4,10 @@ const keys = require('./config/keys');
 const bodyParser = require('body-parser');
 const app = express();
 
-require('./routes/productRoutes')(app);
+
 require('./models/Product');
 require('./models/Category');
+require('./routes/productRoutes')(app);
 
 mongoose.connect(keys.mongoURI)
 app.use(bodyParser.json());

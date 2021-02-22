@@ -7,4 +7,4 @@ const categorySchema = new Schema({
     imageurl: String,
 })
  
-mongoose.models('categories', categorySchema);
+mongoose.model('categories', categorySchema);
