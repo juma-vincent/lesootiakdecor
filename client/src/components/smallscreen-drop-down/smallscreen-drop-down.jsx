@@ -13,7 +13,7 @@ import DropDownItem from "../drop-down-item/drop-down-item";
 
 
 
-const SmallScreenDropDownMenu = () => {
+const SmallScreenDropDownMenu = ({history, handleToggle}) => {
   const [activeMenu, setActiveMenu] = useState('main');
   
   const handleIconClick = (path)=>{
@@ -29,18 +29,31 @@ const SmallScreenDropDownMenu = () => {
           
            >
 
-              <div className="menu">                  
-                  <DropDownItem>Funerals/Burials</DropDownItem>
-                  <DropDownItem>Memorials</DropDownItem>
+            <div className="menu">
+                  <DropDownItem  onIconClick={()=>{
+                      history.push('/');
+                      handleToggle()
+                    }}>Home</DropDownItem>
+
+                  <DropDownItem  onIconClick={()=>{
+                      history.push('/funerals');
+                      handleToggle()
+                    }}>Funerals/Burials</DropDownItem>
+
+                  <DropDownItem  onIconClick={()=>{
+                      history.push('memorials');
+                      handleToggle()
+                    }}>Memorials</DropDownItem>
+                    
                   <DropDownItem
-                      rightIcon={<DownArrow fill='black' height='13px' width='14px'/>}
+                      rightIcon={<DownArrow fill='black' height='13px' width='16px'/>}
                       onIconClick={()=> handleIconClick('giveaways')}
                   >
                       Giveaways
                   </DropDownItem>
 
                   <DropDownItem  
-                      rightIcon={<DownArrow fill='black' height='13px' width='14px'/>}
+                      rightIcon={<DownArrow fill='black' height='13px' width='16px'/>}
                       // leftIcon={<LeftArrow fill='black' height='14px' width='14px'/>}
                       onIconClick={ ()=> handleIconClick('wedding')}                
                   >
@@ -48,19 +61,19 @@ const SmallScreenDropDownMenu = () => {
                   </DropDownItem>
 
                   <DropDownItem
-                      rightIcon={<DownArrow fill='black' height='13px' width='14px'/>}
+                      rightIcon={<DownArrow fill='black' height='13px' width='16px'/>}
                       onIconClick={()=> handleIconClick('meetings')}
                   >
                       Meetings
                   </DropDownItem>
 
                   <DropDownItem
-                      rightIcon={<DownArrow fill='black' height='13px' width='14px'/>}
+                      rightIcon={<DownArrow fill='black' height='13px' width='16px'/>}
                       onIconClick={()=> handleIconClick('events')}
                   >
                       Events
                   </DropDownItem>
-              </div>
+            </div>
 
           </CSSTransition>
 {/* ---------------------------------------------------------------------Giveaways */}
@@ -70,12 +83,27 @@ const SmallScreenDropDownMenu = () => {
               <div className="menu">
                   
                   <DropDownItem  
-                  leftIcon={<LeftArrow fill='black' height='18px' width='18px'/>}
-                  onIconClick={()=>handleIconClick('main')}
+                        leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
+                        onIconClick={()=>handleIconClick('main')}
                   >
-                      <h4 style={{marginLeft:'20px', hover:'unset'}}>Giveaways</h4>
+                     <h4 style={{marginLeft:'20px', hover:'unset'}}>Giveaways</h4>
                   </DropDownItem>
-                  <DropDownItem >Love Good Wishes</DropDownItem>
+
+                  <DropDownItem  
+                      onIconClick={()=>{
+                      history.push('/love');
+                      handleToggle()
+                      }}
+                    >Love 
+                  </DropDownItem>
+
+                    <DropDownItem  
+                      onIconClick={()=>{
+                      history.push('/good-wishes');
+                      handleToggle()
+                      }}
+                    >Good Wishes
+                    </DropDownItem>
                   
               </div>
 
@@ -88,14 +116,27 @@ const SmallScreenDropDownMenu = () => {
               <div className="menu">
                   
                   <DropDownItem  
-                  leftIcon={<LeftArrow fill='black' height='18px' width='18px'/>}
-                  onIconClick={()=>handleIconClick('main')}
-                  
+                        leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
+                        onIconClick={()=>handleIconClick('main')}                  
                   >
                       <h4 style={{marginLeft:'20px', hover:'unset'}}>Wedding</h4>
                   </DropDownItem>
-                  <DropDownItem > Wedding Planning </DropDownItem>
-                  <DropDownItem> Floral styling</DropDownItem>
+
+                  <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/Wedding-planning');
+                            handleToggle()
+                            }} 
+                   > Wedding Planning 
+                  </DropDownItem>
+
+                  <DropDownItem  
+                      onIconClick={()=>{
+                      history.push('/floral-styling');
+                      handleToggle()
+                      }}
+                    > Floral styling
+                  </DropDownItem>
                   
               </div>
 
@@ -108,14 +149,27 @@ const SmallScreenDropDownMenu = () => {
               <div className="menu">
                   
                   <DropDownItem  
-                  leftIcon={<LeftArrow fill='black' height='18px' width='18px'/>}
-                  onIconClick={()=>handleIconClick('main')}
-                  
+                        leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
+                        onIconClick={()=>handleIconClick('main')}                  
                   >
                       <h4 style={{marginLeft:'20px', hover:'unset'}}>Meetings</h4>
                   </DropDownItem>
-                  <DropDownItem > Churches </DropDownItem>
-                  <DropDownItem> General Meetings</DropDownItem>
+
+                  <DropDownItem  
+                      onIconClick={()=>{
+                      history.push('/churches');
+                      handleToggle()
+                      }} 
+                    > Churches 
+                  </DropDownItem>
+
+                  <DropDownItem  
+                      onIconClick={()=>{
+                      history.push('/general-meetings');
+                      handleToggle()
+                      }}
+                    > General Meetings
+                  </DropDownItem>
                   
               </div>
 
@@ -129,20 +183,56 @@ const SmallScreenDropDownMenu = () => {
               <div className="menu">
                   
                   <DropDownItem  
-                  leftIcon={<LeftArrow fill='black' height='18px' width='18px'/>}
-                  onIconClick={()=>handleIconClick('main')}
-                  
+                        leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
+                        onIconClick={()=>handleIconClick('main')}                  
                   >
                       <h4 style={{marginLeft:'20px', hover:'unset'}}>Events</h4>
                   </DropDownItem>
-                  <DropDownItem > Baby Shower </DropDownItem>
-                  <DropDownItem> Proposal</DropDownItem>
-                  <DropDownItem> Birthday</DropDownItem>
-                  <DropDownItem> Luncheon</DropDownItem>                  
+
+                  <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/baby-shower');
+                            handleToggle();
+                            }} 
+                  > Baby Shower 
+                  </DropDownItem>
+
+                  <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/proposal');
+                            handleToggle()
+                            }}
+                    > Proposal
+                   </DropDownItem>
+
+                  <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/birthday');
+                            handleToggle()
+                            }}
+                    > Birthday
+                  </DropDownItem>
+
+                  <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/luncheon');
+                            handleToggle()
+                            }}
+                    > Luncheon
+                  </DropDownItem>  
+
+                    <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/other');
+                            handleToggle()
+                            }}
+                    > Other 
+                  </DropDownItem>                 
                   
               </div>
 
           </CSSTransition>
+
 
 
 
@@ -152,4 +242,4 @@ const SmallScreenDropDownMenu = () => {
    );
 }
 
-export default SmallScreenDropDownMenu;
+export default withRouter(SmallScreenDropDownMenu);

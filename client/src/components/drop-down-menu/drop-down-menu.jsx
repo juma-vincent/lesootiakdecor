@@ -26,19 +26,18 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
             
              >
 
-<div className="menu">
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/');
-                      toggleOptionDropdownOpen()
-                    }}>Home</DropDownItem>
+            <div className="menu">                  
+
                   <DropDownItem  onIconClick={()=>{
                       history.push('/funerals');
                       toggleOptionDropdownOpen()
                     }}>Funerals/Burials</DropDownItem>
+
                   <DropDownItem  onIconClick={()=>{
                       history.push('memorials');
                       toggleOptionDropdownOpen()
                     }}>Memorials</DropDownItem>
+                    
                   <DropDownItem
                       rightIcon={<RightArrow fill='black' height='13px' width='16px'/>}
                       onIconClick={()=> handleIconClick('giveaways')}
@@ -67,7 +66,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
                   >
                       Events
                   </DropDownItem>
-              </div>
+            </div>
 
           </CSSTransition>
 {/* ---------------------------------------------------------------------Giveaways */}
@@ -77,15 +76,27 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
               <div className="menu">
                   
                   <DropDownItem  
-                  leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
-                  onIconClick={()=>handleIconClick('main')}
+                        leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
+                        onIconClick={()=>handleIconClick('main')}
                   >
                      <h4 style={{marginLeft:'20px', hover:'unset'}}>Giveaways</h4>
                   </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/love-good-wishes');
+
+                  <DropDownItem  
+                      onIconClick={()=>{
+                      history.push('/love');
                       toggleOptionDropdownOpen()
-                    }}>Love Good Wishes</DropDownItem>
+                      }}
+                    >Love 
+                  </DropDownItem>
+
+                    <DropDownItem  
+                      onIconClick={()=>{
+                      history.push('/good-wishes');
+                      toggleOptionDropdownOpen()
+                      }}
+                    >Good Wishes
+                    </DropDownItem>
                   
               </div>
 
@@ -98,20 +109,27 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
               <div className="menu">
                   
                   <DropDownItem  
-                  leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
-                  onIconClick={()=>handleIconClick('main')}
-                  
+                        leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
+                        onIconClick={()=>handleIconClick('main')}                  
                   >
                       <h4 style={{marginLeft:'20px', hover:'unset'}}>Wedding</h4>
                   </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/Wedding-planning');
-                      toggleOptionDropdownOpen()
-                    }} > Wedding Planning </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
+
+                  <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/Wedding-planning');
+                            toggleOptionDropdownOpen()
+                            }} 
+                   > Wedding Planning 
+                  </DropDownItem>
+
+                  <DropDownItem  
+                      onIconClick={()=>{
                       history.push('/floral-styling');
                       toggleOptionDropdownOpen()
-                    }}> Floral styling</DropDownItem>
+                      }}
+                    > Floral styling
+                  </DropDownItem>
                   
               </div>
 
@@ -124,20 +142,27 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
               <div className="menu">
                   
                   <DropDownItem  
-                  leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
-                  onIconClick={()=>handleIconClick('main')}
-                  
+                        leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
+                        onIconClick={()=>handleIconClick('main')}                  
                   >
                       <h4 style={{marginLeft:'20px', hover:'unset'}}>Meetings</h4>
                   </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
+
+                  <DropDownItem  
+                      onIconClick={()=>{
                       history.push('/churches');
                       toggleOptionDropdownOpen()
-                    }} > Churches </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
+                      }} 
+                    > Churches 
+                  </DropDownItem>
+
+                  <DropDownItem  
+                      onIconClick={()=>{
                       history.push('/general-meetings');
                       toggleOptionDropdownOpen()
-                    }}> General Meetings</DropDownItem>
+                      }}
+                    > General Meetings
+                  </DropDownItem>
                   
               </div>
 
@@ -151,28 +176,51 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
               <div className="menu">
                   
                   <DropDownItem  
-                  leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
-                  onIconClick={()=>handleIconClick('main')}
-                  
+                        leftIcon={<LeftArrow fill='black' height='22px' width='24px'/>}
+                        onIconClick={()=>handleIconClick('main')}                  
                   >
                       <h4 style={{marginLeft:'20px', hover:'unset'}}>Events</h4>
                   </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/baby-shower');
-                      toggleOptionDropdownOpen()
-                    }} > Baby Shower </DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/proposal');
-                      toggleOptionDropdownOpen()
-                    }}> Proposal</DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('/birthday');
-                      toggleOptionDropdownOpen()
-                    }}> Birthday</DropDownItem>
-                  <DropDownItem  onIconClick={()=>{
-                      history.push('luncheon');
-                      toggleOptionDropdownOpen()
-                    }}> Luncheon</DropDownItem>                  
+
+                  <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/baby-shower');
+                            toggleOptionDropdownOpen();
+                            }} 
+                  > Baby Shower 
+                  </DropDownItem>
+
+                  <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/proposal');
+                            toggleOptionDropdownOpen()
+                            }}
+                    > Proposal
+                   </DropDownItem>
+
+                  <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/birthday');
+                            toggleOptionDropdownOpen()
+                            }}
+                    > Birthday
+                  </DropDownItem>
+
+                  <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/luncheon');
+                            toggleOptionDropdownOpen()
+                            }}
+                    > Luncheon
+                  </DropDownItem>  
+
+                    <DropDownItem  
+                            onIconClick={()=>{
+                            history.push('/other');
+                            toggleOptionDropdownOpen()
+                            }}
+                    > Other 
+                  </DropDownItem>                 
                   
               </div>
 
