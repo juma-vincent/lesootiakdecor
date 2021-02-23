@@ -25,7 +25,7 @@ const Homepage = () => {
                 <div id='about'  >
 
                     <h2>About Us</h2>
-                        <p >
+                        
                             Lesootia K Decor is a leading online gift store in the country.
                             Our shop offers a variety of fresh flowers for all occasions including 
                             Birthdays, Aniversaries, Weddings among others.
@@ -52,7 +52,7 @@ const Homepage = () => {
 
                             
                         </div>
-                        </p>
+                        
                 </div>
             </div>
         <div className='features-wrapper'> 
