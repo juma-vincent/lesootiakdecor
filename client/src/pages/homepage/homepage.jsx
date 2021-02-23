@@ -21,13 +21,42 @@ const Homepage = () => {
                         />
                     ))}
             </div>
-        <div id='about' style={{boxShadow: '0.5px 2px 5px lightgrey', margin:'30px', padding: '10px', 
-        borderRadius:'3px'}} >
-            <h2>About Lesootia K Decor</h2>
-                <p >Lesootia K Decor was started in 2019.
-                </p>
-        </div>
-        <div className='features-wrapper'>
+            <div className='about-section'>
+                <div id='about'  >
+
+                    <h2>About Us</h2>
+                        <p >
+                            Lesootia K Decor is a leading online gift store in the country.
+                            Our shop offers a variety of fresh flowers for all occasions including 
+                            Birthdays, Aniversaries, Weddings among others.
+                            We also provide event planning and management solutions for corporate, weddings,
+                            companies, and brands in any industry sector.
+                            Shop for flowers online with us and send to your loved ones all over the country.
+                        <div id="about-content">
+                            <div className='about-and-features-title'>Expressions through Flowers</div>
+                            When you fall short of words put a smile on their face with a beautiful flower.
+                            We know the language of flowers, let us help you deliver the perfect message to
+                            your loved ones.
+                            <div className='about-and-features-title'>An event Planning and floral styling business</div>
+                            We take care of all necessary arrangements to successfully setup your event.
+                            We want to ensure that our service is an integral part of our client’s overall success.
+                            Let us help you plan a top-notch event that will leave a lasting impression on your 
+                            attendees.
+
+                            <div className='about-and-features-title'>Delivery</div>
+                            We have an excellent delivery team that covers the whole of Kenya currently. We 
+                            have same day delivery in Nairobi,  within 2 hours. We also have next day delivery
+                             via our Courier Services for all orders  outside Nairobi. All flowers 
+                            are properly and carefully packaged which ensures they arrive in perfect condition
+                            when you receive them. 
+
+                            
+                        </div>
+                        </p>
+                </div>
+            </div>
+        <div className='features-wrapper'> 
+        <div className='about-and-features-title'>Why Choose Lesootia K Decor?</div>       
             <Features/>
         </div>
 

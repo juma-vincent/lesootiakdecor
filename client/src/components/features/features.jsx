@@ -56,10 +56,10 @@ const Features = () => {
       <div className="feature">
         <PhoneIcon className="icon" />
         <div className="content">
-          <h3>Talk to us anytime</h3>
+          <h3>Excellent Customer Service</h3>
           <p>
             We value your calls and that's why we take time to answer instantly.
-            Call us on 0712062516.
+            Call us on 0701032469.
           </p>
         </div>
       </div>
