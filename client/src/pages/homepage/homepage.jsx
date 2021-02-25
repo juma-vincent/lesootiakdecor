@@ -45,7 +45,7 @@ const Homepage = () => {
                             <div className='about-and-features-title'>Delivery</div>
                             We have excellent and timely delivery services countrywide.
                             We've got an excellent delivery team that covers the whole of Kenya currently. We 
-                            have same day delivery in Nairobi,  within 2 hours. We also have next day delivery
+                            have same day delivery in Nairobi. We also have timely delivery
                             via our Courier Services for all orders  outside Nairobi. All flowers 
                             are properly and carefully packaged which ensures they arrive in perfect condition
                             when you receive them. 

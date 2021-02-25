@@ -16,7 +16,7 @@ const Features = () => {
         <div className="content">
           <h3>Instant delivery</h3>
           <p>
-            We deliver your orders to your door step in less than 24 hours. We
+            We deliver your orders to your door step promptly. We
             value your time and patience.
           </p>
         </div>
@@ -24,10 +24,10 @@ const Features = () => {
       <div className="feature">
         <TrophyIcon className="icon" />
         <div className="content">
-          <h3>Best quality Flowers</h3>
+          <h3>Best Floral Styling and Event Planning</h3>
           <p>
-            We take pride in offering the healthiest flowers to all our
-            customers. We thoroughly scrutinize our products beforehand to
+            We take pride in offering the best quality floral styling and event planning to all our
+            customers. Our services and products are thoroughly scrutinized beforehand to
             ensure a lasting value.
           </p>
         </div>
