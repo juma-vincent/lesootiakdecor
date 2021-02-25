@@ -24,7 +24,7 @@ const Features = () => {
       <div className="feature">
         <TrophyIcon className="icon" />
         <div className="content">
-          <h3>Best Floral Styling and Event Planning</h3>
+          <h3>Best Floral Styling Services</h3>
           <p>
             We take pride in offering the best quality floral styling and event planning to all our
             customers. Our services and products are thoroughly scrutinized beforehand to
