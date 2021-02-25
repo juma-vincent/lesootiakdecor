@@ -26,17 +26,16 @@ const Homepage = () => {
 
                     <h2>About Us</h2>
                         
-                            Lesootia K Decor is a leading online gift store in the country.
-                            Our shop offers a variety of fresh flowers for all occasions including 
-                            Birthdays, Aniversaries, Weddings among others.
-                            We also provide event planning and management solutions for corporate, weddings,
-                            companies, and brands in any industry sector.
-                            Shop for flowers online with us and send to your loved ones all over the country.
+                    Lesootia K Decor is the leading decor and floral styling business in the country.
+                    Our shop offers a variety of flowers for all occasions. 
+                    We also provide event planning and floral styling for corporate, weddings, burials,
+                    memorials.
+                    Shop our services online and have them delivered to you anywhere in the world. 
+
+
                         <div id="about-content">
-                            <div className='about-and-features-title'>Expressions through Flowers</div>
-                            When you fall short of words put a smile on their face with a beautiful flower.
-                            We know the language of flowers, let us help you deliver the perfect message to
-                            your loved ones.
+                            <div className='expressions-through-flowers'>Expressions through Flowers</div>
+                           
                             <div className='about-and-features-title'>An event Planning and floral styling business</div>
                             We take care of all necessary arrangements to successfully setup your event.
                             We want to ensure that our service is an integral part of our client’s overall success.
@@ -44,9 +43,10 @@ const Homepage = () => {
                             attendees.
 
                             <div className='about-and-features-title'>Delivery</div>
-                            We have an excellent delivery team that covers the whole of Kenya currently. We 
+                            We have excellent and timely delivery services countrywide.
+                            We've got an excellent delivery team that covers the whole of Kenya currently. We 
                             have same day delivery in Nairobi,  within 2 hours. We also have next day delivery
-                             via our Courier Services for all orders  outside Nairobi. All flowers 
+                            via our Courier Services for all orders  outside Nairobi. All flowers 
                             are properly and carefully packaged which ensures they arrive in perfect condition
                             when you receive them. 
 
@@ -68,3 +68,4 @@ const Homepage = () => {
 }
  
 export default Homepage;
+
