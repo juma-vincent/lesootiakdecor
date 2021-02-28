@@ -64,3 +64,32 @@
         }
 
 }
+
+.wedding-page-wrapper{
+    display: flex;
+    flex-wrap: wrap;  
+    width: 80vw;
+    margin: 20px auto;
+    &>span{
+        height: 250px;
+        width: 250px;
+        background-size: cover;
+        // border: yellow 1px solid;
+        margin: 3px;
+        
+        
+    }
+
+    @media screen and (max-width: 800px) {
+     display: grid; 
+     grid-template-columns: 1fr 1fr 1fr; 
+        width: 95vw;
+     &>span{
+        // border: green solid 1px; 
+        
+        width: 30vw;
+        height: 150px;
+        
+    }
+    }
+}
