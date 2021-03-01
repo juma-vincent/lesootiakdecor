@@ -5,12 +5,15 @@ import {connect} from 'react-redux';
 
 
 const Option = (props) => {
-    const [open, setOpen] = useState(false);    
+    // const [open, setOpen] = useState(false);    
 
     return (         
-             <span className={`${props.icon? 'icon-present': ''} option`} >
-                {props.text}  
+             <span className={`${props.icon ? 'icon-present': ''} option`} >
 
+                {props.icon? <span onClick={ ()=> props.toggleOptionDropdownOpen()}>{props.text} </span>
+                            :<span>{props.text} </span>
+                }  
+               
                 <span className='option-icon' 
                     onClick={ ()=> props.toggleOptionDropdownOpen()}>{props.icon}
                 </span>  

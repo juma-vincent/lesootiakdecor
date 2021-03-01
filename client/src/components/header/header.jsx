@@ -45,13 +45,10 @@ const Header = ({toggleNavigationOpen , match}) => {
                     
                     <Link to="/" >
                     <Option text='Home'/>
-                    </Link>
-                    <Link to="/services">
-                    <Option text='Services'/>
-                    </Link>
+                    </Link>                    
                     <span>
-                      <Option text='Flowers' icon={<DownArrow fill='gray' height='18px' width='18px'
-                      style={{marginBottom:'-5px'}}
+                      <Option text='Occasions' icon={<DownArrow fill='gray' height='18px' width='14px'
+                      style={{marginBottom:'-5px'}} 
                       />}>
                         <DropDownMenu />
                       </Option>

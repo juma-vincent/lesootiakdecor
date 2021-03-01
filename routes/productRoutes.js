@@ -16,7 +16,7 @@ module.exports = (app)=>{
     })
 
     app.post('/api/new_product', async (req, res)=>{
-        const { name, imageurl, price, category, subcategory } = req.body;
+        const { name, imageurl, price, category, subcategory } = req.body;        
         
         await new Product({
             name,
@@ -29,7 +29,8 @@ module.exports = (app)=>{
         res.send('success');
     })
 
-    app.post('/api/new_category', async(req, res)=>{
+    app.post('/api/new_category', async(req, res)=>{        
+
         const { name, imageurl } = req.body;
 
         await new Category({

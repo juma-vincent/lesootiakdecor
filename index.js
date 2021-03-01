@@ -7,10 +7,12 @@ const app = express();
 
 require('./models/Product');
 require('./models/Category');
-require('./routes/productRoutes')(app);
+
 
 mongoose.connect(keys.mongoURI)
 app.use(bodyParser.json());
+
+require('./routes/productRoutes')(app);
 
 
 if(process.env.NODE_ENV === 'production'){

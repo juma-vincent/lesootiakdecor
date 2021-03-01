@@ -7,22 +7,22 @@ import { ImageSliderContainer} from './banner-slider.styles';
 
 const bannerData=[
 {title:'Lesootia K Decor', 
-subtitle:'Get your delivery in minutes', 
-buttonText:'SHOP WITH US',
+subtitle:'Floral Styling Services', 
+buttonText:'Find Out More',
 link:'/shop',
-imageUrl:'/images/img1.jpg'},
-
-{title:'FRESH FLOWERS', 
-subtitle:'Guaranteed Quality.', 
-buttonText:'',
-link:'',
 imageUrl:'/images/img2.jpg'},
 
-{title:'', 
-subtitle:'', 
-buttonText:'',
+{title:'Event Planning', 
+subtitle:'Weddings/Parties/Business', 
+buttonText:'Book Now',
 link:'',
-imageUrl:'/images/img5.jpg'},
+imageUrl:'/images/img3.jpg'},
+
+{title:'Shop Our Premium Flowers', 
+subtitle:'Instant Delivery', 
+buttonText:'Shop Now',
+link:'',
+imageUrl:'/images/img1.jpg'},
 
 ]
 
