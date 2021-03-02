@@ -34,7 +34,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
                     }}>Funerals/Burials</DropDownItem>
 
                   <DropDownItem  onIconClick={()=>{
-                      history.push('memorials');
+                      history.push('/memorials');
                       toggleOptionDropdownOpen()
                     }}>Memorials</DropDownItem>
                     
@@ -117,7 +117,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/Wedding-planning');
+                            history.push('/category/wedding');
                             toggleOptionDropdownOpen()
                             }} 
                    > Wedding Planning 
@@ -125,7 +125,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/floral-styling');
+                      history.push('/category/wedding');
                       toggleOptionDropdownOpen()
                       }}
                     > Floral styling
@@ -150,7 +150,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/churches');
+                      history.push('/category1/meetings');
                       toggleOptionDropdownOpen()
                       }} 
                     > Churches 
@@ -158,7 +158,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/general-meetings');
+                      history.push('/category1/meetings');
                       toggleOptionDropdownOpen()
                       }}
                     > General Meetings
@@ -184,7 +184,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/baby-shower');
+                            history.push('/subcategory/baby-shower');
                             toggleOptionDropdownOpen();
                             }} 
                   > Baby Shower 
@@ -192,7 +192,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/proposal');
+                            history.push('/subcategory1/proposal');
                             toggleOptionDropdownOpen()
                             }}
                     > Proposal
@@ -200,7 +200,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/birthday');
+                            history.push('/subcategory/birthday');
                             toggleOptionDropdownOpen()
                             }}
                     > Birthday
@@ -208,7 +208,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/luncheon');
+                            history.push('/subcategory2/luncheon');
                             toggleOptionDropdownOpen()
                             }}
                     > Luncheon

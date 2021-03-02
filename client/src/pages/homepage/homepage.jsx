@@ -30,7 +30,7 @@ const Homepage = () => {
                     Our shop offers a variety of flowers for all occasions. 
                     We also provide event planning and floral styling for corporate, weddings, burials,
                     memorials.
-                    Shop our services online and have them delivered to you anywhere in the world. 
+                    Shop our services online and have them delivered to you anywhere in the country. 
 
 
                         <div id="about-content">

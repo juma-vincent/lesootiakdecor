@@ -124,7 +124,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/Wedding-planning');
+                            history.push('/category/wedding');
                             handleToggle()
                             }} 
                    > Wedding Planning 
@@ -132,7 +132,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/floral-styling');
+                      history.push('/category/wedding');
                       handleToggle()
                       }}
                     > Floral styling
@@ -157,7 +157,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/churches');
+                      history.push('/category1/meetings');
                       handleToggle()
                       }} 
                     > Churches 
@@ -165,7 +165,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/general-meetings');
+                      history.push('/category1/meetings');
                       handleToggle()
                       }}
                     > General Meetings
@@ -191,7 +191,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/baby-shower');
+                            history.push('/subcategory/baby-shower');
                             handleToggle();
                             }} 
                   > Baby Shower 
@@ -199,7 +199,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/proposal');
+                            history.push('/subcategory1/proposal');
                             handleToggle()
                             }}
                     > Proposal
@@ -207,7 +207,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/birthday');
+                            history.push('/subcategory/birthday');
                             handleToggle()
                             }}
                     > Birthday
@@ -215,7 +215,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/luncheon');
+                            history.push('/subcategory2/luncheon');
                             handleToggle()
                             }}
                     > Luncheon

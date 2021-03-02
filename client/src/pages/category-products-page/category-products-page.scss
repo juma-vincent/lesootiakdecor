@@ -1,11 +1,11 @@
-.products-page {
+.subcategory-products-page {
     display: flex;
     flex-direction: column;
     width: 90vw;
     margin: auto;
   
     
-    .products {
+    .subcategory-products {
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -32,7 +32,7 @@
         }
       }
   
-      &.product-item {
+      &.subcategory-product-item {
         margin-bottom: 30px;
       }
     }

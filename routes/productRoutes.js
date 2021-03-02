@@ -10,10 +10,21 @@ module.exports = (app)=>{
     })
 
     app.post('/api/filter_product_by_category', async (req, res)=>{
+        
          const { categoryName } = req.body;
          const categoryProducts = await Product.find({ category: categoryName });
+         
          res.send(categoryProducts);
-    })
+    });
+
+    app.post('/api/filter_product_by_subcategory', async (req, res)=>{
+        
+        const { subcategoryName } = req.body;
+        const subcategoryProducts = await Product.find({ subcategory: subcategoryName });        
+        res.send(subcategoryProducts);
+   });
+
+    
 
     app.post('/api/new_product', async (req, res)=>{
         const { name, imageurl, price, category, subcategory } = req.body;        
