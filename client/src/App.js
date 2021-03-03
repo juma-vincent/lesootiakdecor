@@ -15,6 +15,7 @@ import BabyShowerPage from './pages/events-page/baby-shower/baby-shower';
 import LuncheonPage from './pages/events-page/luncheon/luncheon';
 import ChurchMeetingsPage from './pages/meetings/church-meetings/church-meetings';
 import GeneralMeetingsPage from './pages/meetings/general-meetings/general-meetings';
+import OtherPage from './pages/events-page/other/other';
 
 
 
@@ -35,6 +36,7 @@ export default ()=>{
             <Route path='/category1/:categoryName' component={CategoryProductsPage} /> 
             <Route path='/category2/:categoryName' component={ChurchMeetingsPage} /> 
             <Route path='/category3/:categoryName' component={GeneralMeetingsPage} /> 
+            <Route path='/other' component={OtherPage} /> 
         </Switch>
 
         <Footer/>

@@ -1,0 +1,23 @@
+.other-page{
+
+    #other-description {
+        text-align: start;  
+        width: 95vw;
+        height: 30vh;
+        color: rgb(110, 106, 106);
+        line-height: 1.4;
+        padding-left: 10px;
+        font-size: 18px;
+        
+        margin: 15px 10px;
+
+        @media screen and (max-width: 800px) {
+            
+            font-size: 17px;
+            padding-left: unset;
+            
+        } 
+    }
+
+
+}
