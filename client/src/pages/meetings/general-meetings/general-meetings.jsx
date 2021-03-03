@@ -1,11 +1,12 @@
 import React from "react";
-import "./meetings.scss";
+import "./general-meetings.scss";
 import axios from 'axios';
-import Spinner from "../../components/spinner/spinner";
-import ProductItem from "../../components/product-item/product-item";
+import ProductItem from "../../../components/product-item/product-item";
+import Spinner from "../../../components/spinner/spinner";
 
 
-class MeetingsPage extends React.Component {
+
+class GeneralMeetingsPage extends React.Component {
   state ={
     products: null
   }  
@@ -30,7 +31,7 @@ class MeetingsPage extends React.Component {
         (
          <div className="meetings-products-page">           
             <h1 style={{textAlign: 'center', padding:'0 15px'}}>
-              {this.props.match.params.categoryName.toUpperCase()} 
+              GENERAL {this.props.match.params.categoryName.toUpperCase()} 
             </h1>
 
             <div id='meetings-description'>
@@ -61,4 +62,4 @@ class MeetingsPage extends React.Component {
 }
  
 
-export default MeetingsPage;
+export default GeneralMeetingsPage;

@@ -158,7 +158,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/category2/meetings');
+                      history.push('/category3/meetings');
                       toggleOptionDropdownOpen()
                       }}
                     > General Meetings

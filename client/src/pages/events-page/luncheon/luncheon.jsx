@@ -34,9 +34,13 @@ class LuncheonPage extends React.Component {
             <h2 id='luncheon-title'>Expressions through Flowers 🌹</h2>
 
             <div id='luncheon-description'>
-            Allow us to bring visions of your events to life,
+            "Oh look it's luncheon o'clock".
+            We are here to make it happen for you.
+            Talk to us.
+
+            {/* Allow us to bring visions of your events to life,
             We promise to give you the best
-            Kindly contact us for any inquiries. 
+            Kindly contact us for any inquiries.  */}
             </div>
 
             {/* <div id='luncheon-description'>

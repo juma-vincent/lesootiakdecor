@@ -13,7 +13,9 @@ import ProposalPage from './pages/events-page/proposal/proposal';
 import BirthdayPage from './pages/events-page/birthday/birthday';
 import BabyShowerPage from './pages/events-page/baby-shower/baby-shower';
 import LuncheonPage from './pages/events-page/luncheon/luncheon';
-import MeetingsPage from './pages/meetings/meetings';
+import ChurchMeetingsPage from './pages/meetings/church-meetings/church-meetings';
+import GeneralMeetingsPage from './pages/meetings/general-meetings/general-meetings';
+
 
 
 export default ()=>{
@@ -31,7 +33,8 @@ export default ()=>{
             <Route path='/subcategory3/:subcategoryName' component={BirthdayPage} /> 
             <Route path='/subcategory4/:subcategoryName' component={BabyShowerPage} /> 
             <Route path='/category1/:categoryName' component={CategoryProductsPage} /> 
-            <Route path='/category2/:categoryName' component={MeetingsPage} /> 
+            <Route path='/category2/:categoryName' component={ChurchMeetingsPage} /> 
+            <Route path='/category3/:categoryName' component={GeneralMeetingsPage} /> 
         </Switch>
 
         <Footer/>

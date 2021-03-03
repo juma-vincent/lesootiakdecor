@@ -165,7 +165,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/category2/meetings');
+                      history.push('/category3/meetings');
                       handleToggle()
                       }}
                     > General Meetings

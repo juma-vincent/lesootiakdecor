@@ -6,7 +6,7 @@ import axios from 'axios';
 
 class WeddingPage extends React.Component {
     state ={ 
-        products:[]
+        products:null
         }  
 
     async componentDidMount(){
