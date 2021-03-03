@@ -1,13 +1,12 @@
-import React,{useEffect, useState} from "react";
+import React from "react";
 import './proposal.scss';
-
-import Spinner from "../../components/spinner/spinner";
+import Spinner from "../../../components/spinner/spinner";
 import axios from 'axios';
 
 
 class ProposalPage extends React.Component {
     state ={ 
-        products:[]
+        products:null
         }  
 
     async componentDidMount(){
@@ -28,12 +27,21 @@ class ProposalPage extends React.Component {
       <>
         {this.state.products?
         (
-         <div className="products-page">           
+         <div className="proposal-products-page">           
             <h1 id='proposal-title'>PROPOSAL</h1>
+
+            <h2 id='proposal-title'>Expressions through Flowers 🌹</h2>
+
+            <div id='proposal-description'>
+            Allow us to bring visions of your events to life,
+            We promise to give you the best
+            Kindly contact us for any inquiries. 
+            </div>
+
             <div id='proposal-description'>
             Talk to us about your proposal, we'll make it worth her while.
             </div>
-            <div className="products">            
+            <div className="proposal-products">            
               {this.state.products.map((product) => (
 
                 <div key={product._id}

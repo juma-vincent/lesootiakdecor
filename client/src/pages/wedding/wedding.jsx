@@ -1,7 +1,5 @@
 import React,{useEffect, useState} from "react";
 import './wedding.scss';
-import { connect } from "react-redux";
-import ProductItem from "../../components/product-item/product-item";
 import Spinner from "../../components/spinner/spinner";
 import axios from 'axios';
 
@@ -29,7 +27,7 @@ class WeddingPage extends React.Component {
       <>
         {this.state.products?
         (
-         <div className="products-page">           
+         <div className="wedding-products-page">           
             <h1 id='wedding-title'>WEDDING</h1>
             <div id='wedding-description'>
             Everyone loves a wedding, seeing two become one makes our hearts full ❤️.
@@ -38,7 +36,7 @@ class WeddingPage extends React.Component {
             you the best quotations for your dream wedding. We consider your budget
              and preferences. But below are some of the magical moments we've created.
             </div>
-            <div className="products">            
+            <div className="wedding-products">            
               {this.state.products.map((product) => (
 
                 <div key={product._id}

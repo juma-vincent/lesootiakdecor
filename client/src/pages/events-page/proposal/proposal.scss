@@ -1,38 +1,40 @@
-.products-page {
+.proposal-products-page {
     display: flex;
     flex-direction: column;
-    width: 95vw;
+    width: 100vw;
     
-        #luncheon-description {
-            text-align: center;  
+        #proposal-description {
+            text-align: start;  
             width: 90vw;
             color: rgb(110, 106, 106);
-            line-height: 1.5;
-            padding-left: 10px;
-            font-size: 17px;
+            line-height: 1.4;
+            padding-left: 35px;
+            font-size: 16px;
+            margin-bottom: 15px;
 
             @media screen and (max-width: 800px) {
                 width: 90vw;
                 margin: 0 auto;
-                font-size: 14px;
+                font-size: 13px;
                 padding-left: unset;
                 text-align: start; 
+                margin-bottom: 10px;
             } 
         }
 
-        #luncheon-title{
+        #proposal-title{
           text-align: center; 
           padding: 0 17px; 
         }
     
-        .products {
+        .proposal-products {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 17px;
             margin: 5px auto;
             margin-bottom: 10px;
-        
-                & .luncheon-page-image {
+            
+                & .proposal-page-image {
                         width: 30vw;
                         height: 75vh;
                         background-size: cover;
@@ -45,7 +47,7 @@
 
                 @media screen and (max-width: 800px) {
                     grid-template-columns:  1fr;
-                        & .luncheon-page-image {
+                        & .proposal-page-image {
                             width: 90vw;
                             height: 47vh;
                             background-size: cover;

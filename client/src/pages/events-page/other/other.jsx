@@ -1,5 +1,5 @@
 import React from "react";
-import "./subcategory-products-page.scss";
+import "./other.scss";
 import ProductItem from "../../components/product-item/product-item";
 import Spinner from "../../components/spinner/spinner";
 import axios from 'axios';
@@ -55,10 +55,4 @@ class SubcategoryProductsPage extends React.Component {
  
 
 
-
-// const mapStateToProps = ({shop}) => ({
-//   products : shop.products 
-// });
-
-// export default connect(mapStateToProps)(SubcategoryProductsPage);
 export default SubcategoryProductsPage;

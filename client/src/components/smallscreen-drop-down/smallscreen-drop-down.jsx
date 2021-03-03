@@ -157,7 +157,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/category1/meetings');
+                      history.push('/category2/meetings');
                       handleToggle()
                       }} 
                     > Churches 
@@ -165,7 +165,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/category1/meetings');
+                      history.push('/category2/meetings');
                       handleToggle()
                       }}
                     > General Meetings
@@ -191,7 +191,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/subcategory/baby-shower');
+                            history.push('/subcategory4/baby-shower');
                             handleToggle();
                             }} 
                   > Baby Shower 
@@ -207,7 +207,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                             onIconClick={()=>{
-                            history.push('/subcategory/birthday');
+                            history.push('/subcategory3/birthday');
                             handleToggle()
                             }}
                     > Birthday

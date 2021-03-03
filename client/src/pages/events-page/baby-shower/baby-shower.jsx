@@ -1,11 +1,11 @@
 import React from "react";
-import "./subcategory-products-page.scss";
-import ProductItem from "../../components/product-item/product-item";
-import Spinner from "../../components/spinner/spinner";
+import "./baby-shower.scss";
 import axios from 'axios';
+import ProductItem from "../../../components/product-item/product-item";
+import Spinner from "../../../components/spinner/spinner";
 
 
-class SubcategoryProductsPage extends React.Component {
+class BabyShowerPage extends React.Component {
   state ={
     products: null
   }  
@@ -29,8 +29,16 @@ class SubcategoryProductsPage extends React.Component {
         (
          <div className="subcategory-products-page">           
             <h1 style={{textAlign: 'center', padding:'0 15px'}}>
-              {this.props.match.params.subcategoryName.toUpperCase()}
+              {this.props.match.params.subcategoryName.split('-').join(' ').toUpperCase()}
             </h1>
+
+            <h2 id='baby-shower-title'>Expressions through Flowers 🌹</h2>
+
+            <div id='baby-shower-description'>
+            Allow us to bring visions of your events to life,
+            We promise to give you the best
+            Kindly contact us for any inquiries. 
+            </div>
 
             <div className="subcategory-products">            
               {this.state.products.map((product) => (
@@ -55,10 +63,4 @@ class SubcategoryProductsPage extends React.Component {
  
 
 
-
-// const mapStateToProps = ({shop}) => ({
-//   products : shop.products 
-// });
-
-// export default connect(mapStateToProps)(SubcategoryProductsPage);
-export default SubcategoryProductsPage;
+export default BabyShowerPage;
