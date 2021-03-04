@@ -41,7 +41,8 @@ const Header = ({toggleNavigationOpen , match}) => {
                     
                     <div id='cart-icon-small-screen'>
                       < CartIcon width='30px' height='30px' style={{marginLeft:'170%'}}/>
-                    </div>                                    
+                    </div>   
+                              
                     
                     <Link to="/" >
                     <Option text='Home'/>
@@ -68,9 +69,9 @@ const Header = ({toggleNavigationOpen , match}) => {
                     )
                     :null
                     }
-                    {/* <div id='cart-icon-large-screen'>
+                    <div id='cart-icon-large-screen'>
                     < CartIcon width='25px' height='25px' style={{marginLeft:'0px'}}/>
-                    </div> */}
+                    </div>
                                            
                 </div>
             </div>
