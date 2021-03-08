@@ -8,7 +8,7 @@ import axios from 'axios';
 
 const Homepage = () => {
     
-     const [products, setProducts] = useState(null);
+     const [products, setProducts] = useState([]);
 
      useEffect(async ()=>{
         const res = await axios.post('/api/filter_product_by_subcategory',
