@@ -1,4 +1,4 @@
-import React from "react";
+import React, { isValidElement } from "react";
 import "./header.scss";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
@@ -9,17 +9,18 @@ import Option from "../option/option";
 import CustomLink from "../custom-link/custom-link";
 import { withRouter } from 'react-router-dom';
 import MenuIcon from "../menu-icon/menu-icon";
-import {ReactComponent as CartIcon} from '../../assets/cart.svg';
 import { ReactComponent as DownArrow} from '../../assets/icons/down-arrow11.svg';
 // import GoogleOption from '../google-signin-option/google-signin-option';
 import { toggleNavigationOpen } from "../../redux/modals/modal-actions";
 import DropDownMenu from "../drop-down-menu/drop-down-menu";
+import CartIcon from "../cart-icon/cart-icon";
+import CartDropdown from "../cart-dropdown/cart-dropdown";
 
 
 
 
-const Header = ({toggleNavigationOpen , match}) => {    
-
+const Header = ({toggleNavigationOpen , cartIsOpen, match}) => {    
+console.log(cartIsOpen)
   return (
             
     <div className="header">
@@ -40,7 +41,7 @@ const Header = ({toggleNavigationOpen , match}) => {
                     </div>  
                     
                     <div id='cart-icon-small-screen'>
-                      < CartIcon width='30px' height='30px' style={{marginLeft:'170%'}}/>
+                      < CartIcon />
                     </div>   
                               
                     
@@ -82,14 +83,20 @@ const Header = ({toggleNavigationOpen , match}) => {
             </div> 
             
         </div>
+
+        {cartIsOpen? <CartDropdown/> : null}
       
-    </div>
+    </div> 
     
   );
 };
+
+const mapStateToProps = state =>({
+  cartIsOpen: state.cart.cartIsOpen
+});
 
 const mapDispatchToProps = (dispatch) => ({
     toggleNavigationOpen: () => dispatch(toggleNavigationOpen),
   });
   
-export default connect(null, mapDispatchToProps)(withRouter(Header));
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Header));

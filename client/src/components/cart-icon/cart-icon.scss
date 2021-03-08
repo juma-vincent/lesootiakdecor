@@ -6,42 +6,45 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
     @media screen and (max-width: 800px) {
-      width: 35px;
-      height: 35px;
+        margin-left: 170%;
+      
     }
+
     @media screen and (max-width: 400px) {
-      width: 25px;
-      height: 25px;
+        margin-left: 90%;
+    
     }
   
     .items-count {
       position: absolute;
       font-size: 13px;
       font-weight: bolder;
-      right: 22px;
+      right: 21px;
       bottom: 30px;
-      color: rgb(252, 146, 76);
+      color: gray;
       @media screen and (max-width: 800px) {
-        right: 16.5px;
-        bottom: 22px;
+        right: 20.5px;
+        bottom: 29px;
       }
       @media screen and (max-width: 400px) {
-        right: 12px;
-        bottom: 17px;
+        right: 20px;
+        bottom: 29px;
       }
     }
   
     .trolley-icon {
       width: 35px;
       height: 35px;
-      fill: rgb(233, 211, 89);
+      fill: rgb(226, 62, 171);
       &:hover {
-        fill: rgb(97, 196, 31);
+        fill: rgb(185, 12, 128);
       }
       @media screen and (max-width: 800px) {
-        width: 29px;
-        height: 29px;
+        width: 35px;
+        height: 35px;
+        
       }
     }
   }

@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import "./product-item.scss";
 import CustomButton from "../custom-button/custom-button";
 import { connect } from "react-redux";
-// import { addItem } from "../../redux/cart/cart.actions";
+import { addItem } from "../../redux/cart/cart.actions";
 import checkmark from '../../assets/icons/checkmark.svg';
 
 
@@ -27,7 +27,7 @@ const ProductItem = ({ item, addItem }) => {
       <CustomButton style={ btnText==='Added to cart' ? 
        { backgroundColor:'rgb(39, 209, 39)', border: 'rgb(39, 209, 39)'} : 
        null} inverted onClick={() => {
-        // addItem(item) ;
+        addItem(item) ;
         setBtnText('Added to cart')
         }}>
         <span id='btn-text'>{btnText}</span> 
@@ -39,10 +39,54 @@ const ProductItem = ({ item, addItem }) => {
   );
 };
 
+const mapDispatchToProps = (dispatch) => ({
+  addItem: (item) => dispatch(addItem(item)),
+});
+
+export default connect(null, mapDispatchToProps)(ProductItem);
+
+// ==============================================================================================
+
+// import React,{useState} from "react";
+// import "./product-item.scss";
+// import CustomButton from "../custom-button/custom-button";
+// import { connect } from "react-redux";
+// import { addItem } from "../../redux/cart/cart.actions";
+// import checkmark from '../../assets/icons/checkmark.svg';
+// import whatsapp from '../../assets/whatsapp.svg'
+
+
+
+// const ProductItem = ({ item, addItem }) => {
+//   const { name, price, imageurl } = item;
+//   const [btnText, setBtnText] = useState('Contact Seller To Order')
+
+//   return (
+//     <div className="product-item">
+//       <div
+//         className="image"
+//         style={{ backgroundImage: `url(${imageurl}) ` }}
+        
+//       ></div>
+//       <div className="product-footer">
+//         <div className="name">{name}</div>
+//         <div className="price">
+//           KES {price}  
+//         </div>
+//       </div>
+
+//       {/* <a  href="https://wa.me/254701032469" > */}
+//       <CustomButton  inverted >
+//         <span id='btn-text'>{btnText}</span> 
+//         <img  id='product-item-checkmark' height='' src={whatsapp} alt=""  style={{marginLeft:'5px'}}/>
+//       </CustomButton>
+//       {/* </a> */}
+//     </div>
+//   );
+// };
+
 // const mapDispatchToProps = (dispatch) => ({
 //   addItem: (item) => dispatch(addItem(item)),
 // });
 
 // export default connect(null, mapDispatchToProps)(ProductItem);
-
-export default ProductItem;
