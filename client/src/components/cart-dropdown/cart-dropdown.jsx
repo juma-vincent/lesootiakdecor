@@ -27,7 +27,7 @@ const CartDropdown = ({ cartItems, dispatch, history }) => {
         id="button"
         onClick={() => {
           history.push("/checkout");
-          dispatch(toggleCartOpen);
+          dispatch(toggleCartOpen());
         }}
       >
         Go to Checkout page
@@ -39,5 +39,6 @@ const CartDropdown = ({ cartItems, dispatch, history }) => {
 const mapStateToProps = state => ({
   cartItems: state.cart.cartItems
 });
+
 
 export default withRouter(connect(mapStateToProps)(CartDropdown));

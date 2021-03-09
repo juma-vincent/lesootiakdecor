@@ -16,6 +16,7 @@ import LuncheonPage from './pages/events-page/luncheon/luncheon';
 import ChurchMeetingsPage from './pages/meetings/church-meetings/church-meetings';
 import GeneralMeetingsPage from './pages/meetings/general-meetings/general-meetings';
 import OtherPage from './pages/events-page/other/other';
+import checkoutPage from './pages/checkout-page/checkout-page';
 
 
 
@@ -25,7 +26,8 @@ export default ()=>{
         <Header/>
         
         <Switch>
-            <Route exact path='/' component={Homepage} />                    
+            <Route exact path='/' component={Homepage} />  
+            <Route exact path='/checkout' component={checkoutPage} />                  
             <Route path='/subcategory/:subcategoryName' component={SubcategoryProductsPage} />  
             <Route path='/admin/upload' component={UploadNewProduct} />  
             <Route path='/category/:categoryName' component={WeddingPage} />  

@@ -20,7 +20,7 @@ import CartDropdown from "../cart-dropdown/cart-dropdown";
 
 
 const Header = ({toggleNavigationOpen , cartIsOpen, match}) => {    
-console.log(cartIsOpen)
+
   return (
             
     <div className="header">
@@ -43,8 +43,7 @@ console.log(cartIsOpen)
                     <div id='cart-icon-small-screen'>
                       < CartIcon />
                     </div>   
-                              
-                    
+
                     <Link to="/" >
                     <Option text='Home'/>
                     </Link>                    
