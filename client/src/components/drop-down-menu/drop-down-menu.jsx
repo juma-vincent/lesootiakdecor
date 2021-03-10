@@ -29,12 +29,12 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
             <div className="menu">                  
 
                   <DropDownItem  onIconClick={()=>{
-                      history.push('/funerals');
+                      history.push('/category1/funerals');
                       toggleOptionDropdownOpen()
                     }}>Funerals/Burials</DropDownItem>
 
                   <DropDownItem  onIconClick={()=>{
-                      history.push('/memorials');
+                      history.push('/category1/memorials');
                       toggleOptionDropdownOpen()
                     }}>Memorials</DropDownItem>
                     

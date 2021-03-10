@@ -33,12 +33,14 @@ export const fetchProductsByCategory = ({categoryName}) => async dispatch =>{
     dispatch({ type: FETCH_PRODUCTS_BY_CATEGORY, payload: res.data})
 }
 
-export const uploadProduct = ({name, imageurl, price, category, subcategory},history)=> async dispatch =>{
+export const uploadProduct = ({name, imageurl, price, setprice, set, category, subcategory},history)=> async dispatch =>{
     
     await axios.post('/api/new_product', {
         name,
         imageurl,
-        price,
+        price, 
+        setprice, 
+        set,
         category,
         subcategory   
         

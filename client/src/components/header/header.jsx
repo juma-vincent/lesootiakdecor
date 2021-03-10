@@ -26,6 +26,7 @@ const Header = ({toggleNavigationOpen , cartIsOpen, match}) => {
     <div className="header">
       <Link to="/" className="logo-container">
         {/* <img src="/images/jamanu-logo.jpg" alt="" className="logo" />          */}
+        
       </Link>
       
       <div className="sub-header-container">
@@ -40,9 +41,9 @@ const Header = ({toggleNavigationOpen , cartIsOpen, match}) => {
                     <MenuIcon width='20px' height='20px'/>
                     </div>  
                     
-                    <div id='cart-icon-small-screen'>
+                    {/* <div id='cart-icon-small-screen'>
                       < CartIcon />
-                    </div>   
+                    </div>    */}
 
                     <Link to="/" >
                     <Option text='Home'/>
@@ -69,9 +70,9 @@ const Header = ({toggleNavigationOpen , cartIsOpen, match}) => {
                     )
                     :null
                     }
-                    <div id='cart-icon-large-screen'>
+                    {/* <div id='cart-icon-large-screen'>
                     < CartIcon width='25px' height='25px' style={{marginLeft:'0px'}}/>
-                    </div>
+                    </div> */}
                                            
                 </div>
             </div>
@@ -83,7 +84,7 @@ const Header = ({toggleNavigationOpen , cartIsOpen, match}) => {
             
         </div>
 
-        {cartIsOpen? <CartDropdown/> : null}
+        {/* {cartIsOpen? <CartDropdown/> : null} */}
       
     </div> 
     

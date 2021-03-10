@@ -11,6 +11,8 @@ class UploadNewProduct extends Component {
         name:'',
         imageurl: '',
         price: 0,
+        setprice: '',
+        set: '',
         category: '',
         subcategory: '',        
         uploadText:'Upload'
@@ -26,16 +28,16 @@ class UploadNewProduct extends Component {
   
       handleSubmit = async (event)=>{
         event.preventDefault();
-        const { name, imageurl, price, category,subcategory } = this.state;
+        const { name, imageurl, price, setprice, set, category, subcategory } = this.state;
         const { history, uploadProduct } = this.props;            
   
         
-        uploadProduct({name, imageurl, price, category, subcategory }, history);
-        this.setState({ name:"", imageurl:"", price:0, category:"", unitType:"",subcategory:"" });
+        uploadProduct({name, imageurl, price, setprice, set, category, subcategory }, history);
+        this.setState({ name:"", imageurl:"", price:0, setprice:"", set:"", category:"", subcategory:""});
       }
   
       render() {
-        const { name, imageurl, price, category, subcategory, uploadText } = this.state;        
+        const { name, imageurl, price, setprice, set, category, subcategory, uploadText } = this.state;        
         
         
         return(
@@ -72,6 +74,26 @@ class UploadNewProduct extends Component {
                         value={price}
                         required
                         onChange={this.handleChange}                  
+                        />
+                    </label>
+
+                    <label htmlFor='setprice'><span className='label-name'>Set Price </span> 
+                        <input                      
+                        name='setprice'                      
+                        type='text'
+                        value={setprice}
+                        required
+                        onChange={this.handleChange}
+                        />
+                    </label>
+
+                    <label htmlFor='set'><span className='label-name'>Set </span> 
+                        <input                      
+                        name='set'                      
+                        type='text'
+                        value={set}
+                        required
+                        onChange={this.handleChange}
                         />
                     </label>
                     
@@ -121,8 +143,8 @@ class UploadNewProduct extends Component {
 
 
   const mapDispatchToProps = (dispatch) => ({
-    uploadProduct: ({name, imageurl, price, category, subcategory},history) =>
-      dispatch(uploadProduct({name, imageurl, price, category, subcategory},history)),
+    uploadProduct: ({name, imageurl, price, setprice, set, category, subcategory},history) =>
+      dispatch(uploadProduct({name, imageurl, price, setprice, set, category, subcategory},history)),
   });
  
 export default connect(null, mapDispatchToProps)(withRouter(UploadNewProduct));
