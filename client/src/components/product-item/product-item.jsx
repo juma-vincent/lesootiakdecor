@@ -5,7 +5,7 @@ import whatsapp from '../../assets/whatsapp.svg';
 
 const ProductItem = ({ item }) => {
   const { name, price, setprice, set, imageurl } = item;
-  const [btnText, setBtnText] = useState('Contact Seller To Order')
+  const [btnText, setBtnText] = useState('Contact Seller')
 
   return (
     <div className="product-item">
