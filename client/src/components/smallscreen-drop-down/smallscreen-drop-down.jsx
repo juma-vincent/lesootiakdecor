@@ -41,7 +41,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
                     }}>Funerals/Burials</DropDownItem>
 
                   <DropDownItem  onIconClick={()=>{
-                      history.push('/category1/memorials');
+                      history.push('/category4/memorials');
                       handleToggle()
                     }}>Memorials</DropDownItem>
                     

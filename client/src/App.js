@@ -8,7 +8,6 @@ import NavigationModal from './components/modals/navigation-modal';
 import UploadNewProduct from './components/upload-product/upload-product';
 import WeddingPage from './pages/wedding/wedding';
 import SubcategoryProductsPage from './pages/subcategory-products-page/subcategory-products-page';
-import CategoryProductsPage from './pages/category-products-page/category-products-page';
 import ProposalPage from './pages/events-page/proposal/proposal';
 import BirthdayPage from './pages/events-page/birthday/birthday';
 import BabyShowerPage from './pages/events-page/baby-shower/baby-shower';
@@ -17,6 +16,8 @@ import ChurchMeetingsPage from './pages/meetings/church-meetings/church-meetings
 import GeneralMeetingsPage from './pages/meetings/general-meetings/general-meetings';
 import OtherPage from './pages/events-page/other/other';
 import checkoutPage from './pages/checkout-page/checkout-page';
+import FuneralsPage from './pages/funerals-page/funerals-page';
+import MemorialsPage from './pages/memorials-page/memorials-page';
 
 
 
@@ -34,8 +35,9 @@ export default ()=>{
             <Route path='/subcategory1/:subcategoryName' component={ProposalPage} />  
             <Route path='/subcategory2/:subcategoryName' component={LuncheonPage} /> 
             <Route path='/subcategory3/:subcategoryName' component={BirthdayPage} /> 
-            <Route path='/subcategory4/:subcategoryName' component={BabyShowerPage} /> 
-            <Route path='/category1/:categoryName' component={CategoryProductsPage} /> 
+            <Route path='/subcategory4/:subcategoryName' component={BabyShowerPage}/> 
+            <Route path='/category1/:categoryName' component={FuneralsPage} /> 
+            <Route path='/category4/:categoryName' component={MemorialsPage} /> 
             <Route path='/category2/:categoryName' component={ChurchMeetingsPage} /> 
             <Route path='/category3/:categoryName' component={GeneralMeetingsPage} /> 
             <Route path='/other' component={OtherPage} /> 

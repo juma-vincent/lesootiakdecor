@@ -34,7 +34,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
                     }}>Funerals/Burials</DropDownItem>
 
                   <DropDownItem  onIconClick={()=>{
-                      history.push('/category1/memorials');
+                      history.push('/category4/memorials');
                       toggleOptionDropdownOpen()
                     }}>Memorials</DropDownItem>
                     
