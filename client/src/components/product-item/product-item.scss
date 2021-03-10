@@ -167,7 +167,8 @@
       #btn-text{
         
         @media screen and (max-width: 400px) {
-          font-size: 9px;
+          font-size: 7px;
+          border: solid 1px red;
         }
       
       }

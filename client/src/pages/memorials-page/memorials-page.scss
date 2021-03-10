@@ -24,7 +24,7 @@
     }
   
     
-    .category-products {
+    .memorials-products {
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -51,7 +51,7 @@
         }
       }
   
-      &.category-product-item {
+      &.memorials-product-item {
         margin-bottom: 30px;
       }
     }

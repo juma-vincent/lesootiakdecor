@@ -39,11 +39,11 @@ class FuneralsPage extends React.Component {
             </div>
             
 
-            <div className="category-products">            
+            <div className="funerals-products">            
               {this.state.products.map((product) => (
                 <ProductItem
                 key={product._id}
-                className="category-product-item"                
+                className="funerals-product-item"                
                 item={product}
                 />
               ))}

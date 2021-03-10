@@ -39,11 +39,11 @@ class MemorialsPage extends React.Component {
               them because we are theirs and they are ours and no passage of time can change that.
              </div>
 
-            <div className="category-products">            
+            <div className="memorials-products">            
               {this.state.products.map((product) => (
                 <ProductItem
                 key={product._id}
-                className="category-product-item"                
+                className="memorials-product-item"                
                 item={product}
                 />
               ))}
