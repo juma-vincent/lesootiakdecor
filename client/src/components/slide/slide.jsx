@@ -14,7 +14,8 @@ const Slide = ({ imageUrl, title, subtitle, buttonText, link, x }) => {
       <TextAndButtonContainer >
         <h1 >{title}</h1>
         <p>{subtitle}</p>
-        {buttonText? <Link to={link}><button>{buttonText}</button> </Link>: null }
+        {/* {buttonText? <Link to={link}><button>{buttonText}</button> </Link>: null } */}
+        {buttonText? <a href={link}><button>{buttonText}</button> </a>: null }
       </TextAndButtonContainer>
 
     </ImageWrapper>
