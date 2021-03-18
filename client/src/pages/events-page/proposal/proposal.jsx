@@ -2,6 +2,7 @@ import React from "react";
 import './proposal.scss';
 import Spinner from "../../../components/spinner/spinner";
 import axios from 'axios';
+import WhatsAppButton from "../../../components/whatsapp-button/whatsapp-button";
 
 
 class ProposalPage extends React.Component {
@@ -41,6 +42,13 @@ class ProposalPage extends React.Component {
             <div id='proposal-description'>
             Talk to us about your proposal, we'll make it worth her while.
             </div>
+
+            <div style={{fontSize:'15px', marginTop: '20px'}} >
+              Starting from Ksh <span style={{color: 'black', fontWeight:'bold'}}>10,000</span>
+            </div>
+
+            <WhatsAppButton> Contact the Planner </WhatsAppButton>
+
             <div className="proposal-products">            
               {this.state.products.map((product) => (
 

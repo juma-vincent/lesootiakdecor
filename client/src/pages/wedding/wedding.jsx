@@ -2,6 +2,7 @@ import React,{useEffect, useState} from "react";
 import './wedding.scss';
 import Spinner from "../../components/spinner/spinner";
 import axios from 'axios';
+import WhatsAppButton from "../../components/whatsapp-button/whatsapp-button";
 
 
 class WeddingPage extends React.Component {
@@ -36,6 +37,13 @@ class WeddingPage extends React.Component {
             you the best quotations for your dream wedding. We consider your budget
              and preferences. But below are some of the magical moments we've created.
             </div>
+
+            <div style={{fontSize:'15px', marginTop: '20px'}} >
+              Starting from Ksh <span style={{color: 'black', fontWeight:'bold'}}>16,000</span>
+            </div>
+
+            <WhatsAppButton> Contact the Planner </WhatsAppButton>
+            
             <div className="wedding-products">            
               {this.state.products.map((product) => (
 

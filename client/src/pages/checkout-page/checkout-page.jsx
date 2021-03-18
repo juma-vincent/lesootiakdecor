@@ -3,6 +3,7 @@ import "./checkout-page.scss";
 import { connect } from "react-redux";
 import CheckoutItem from "../../components/checkout-item/checkout-item";
 import whatsapp from '../../assets/whatsapp.svg'
+import WhatsAppButton from "../../components/whatsapp-button/whatsapp-button";
 
 const CheckoutPage = ({ cartItems, total }) => {
     
@@ -32,12 +33,7 @@ const CheckoutPage = ({ cartItems, total }) => {
         <span>Total: KES {total}</span>
       </div>
 
-      <div  ><a href="https://wa.me/254701032469">
-          <button id='checkout-page-btn' >
-              Order Via Whatsapp
-              <img src={whatsapp} style={{marginLeft:'5px', height:'20px'}} alt=""/>
-          </button>
-      </a></div>
+      <WhatsAppButton>Order Via Whatsapp</WhatsAppButton>
     </div>
   );
 };
