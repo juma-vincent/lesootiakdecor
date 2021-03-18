@@ -20,8 +20,9 @@ const Homepage = () => {
     return ( 
         <div className="homepage" style={{width:'100vw', margin: 'auto'}}> 
             <BannerSlider autoPlay={6}/>
-            <h2>Best Selling Flowers</h2>
-            <div className='flowers' style={{width:'100vw',  boxShadow: '0.5px 2px 5px lightgrey', padding: '40px'}}> 
+            <h2>Best Selling Products</h2>
+            <div className='flowers' style={{width:'100vw',  boxShadow: '0.5px 2px 5px lightgrey',
+             padding: '0 10px'}}> 
                 
                 {products.map((product) => (
                         <ProductItem

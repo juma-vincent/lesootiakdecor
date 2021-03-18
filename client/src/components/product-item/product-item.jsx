@@ -18,12 +18,12 @@ const ProductItem = ({ item }) => {
         <div className="name">{name}</div>
 
         <div className="price">
-          Ksh <span style={{color: 'black', padding:'0 3px'}}> {price}</span> each 
+          Ksh <span style={{color: 'black', padding:'0 3px', fontWeight:'bold'}}> {price}</span> 
         </div>
 
         {item.setprice? 
             <div className="name"> A set of {' '} <span style={{color: 'black'}}>{set}</span> {' '}
-            at Ksh {' '}<span style={{color: 'black'}}>{setprice}</span></div>
+            at Ksh {' '}<span style={{color: 'black', fontWeight:'bold'}}>{setprice}</span></div>
             : null
         }
         
