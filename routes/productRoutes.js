@@ -24,6 +24,15 @@ module.exports = (app)=>{
         res.send(subcategoryProducts);
    });
 
+
+   app.post('/api/filter_product_by_popularity', async (req, res)=>{
+        
+    const { popularityLevel } = req.body;
+    const subcategoryProducts = await Product.find({ popularity: popularityLevel });        
+    res.send(subcategoryProducts);
+});
+
+
     
 
     app.post('/api/new_product', async (req, res)=>{

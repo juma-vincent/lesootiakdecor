@@ -11,8 +11,8 @@ const Homepage = () => {
      const [products, setProducts] = useState([]);
 
      useEffect(async ()=>{
-        const res = await axios.post('/api/filter_product_by_subcategory',
-        { subcategoryName: 'birthday'} );
+        const res = await axios.post('/api/filter_product_by_popularity',
+        { popularityLevel: 'high'} );
 
         setProducts(res.data)
     }, []) ;
