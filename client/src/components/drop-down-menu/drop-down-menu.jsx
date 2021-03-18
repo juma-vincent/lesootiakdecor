@@ -84,7 +84,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/love');
+                      history.push('/subcategory6/love');
                       toggleOptionDropdownOpen()
                       }}
                     >Love 
@@ -92,7 +92,7 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
 
                     <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/good-wishes');
+                      history.push('/subcategory5/good-wishes');
                       toggleOptionDropdownOpen()
                       }}
                     >Good Wishes

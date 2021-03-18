@@ -91,7 +91,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                   <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/love');
+                      history.push('/subcategory6/love');
                       handleToggle()
                       }}
                     >Love 
@@ -99,7 +99,7 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
 
                     <DropDownItem  
                       onIconClick={()=>{
-                      history.push('/good-wishes');
+                      history.push('/subcategory5/good-wishes');
                       handleToggle()
                       }}
                     >Good Wishes
