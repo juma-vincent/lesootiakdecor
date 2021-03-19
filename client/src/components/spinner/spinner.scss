@@ -9,9 +9,9 @@
       display: inline-block;
       width: 50px;
       height: 50px;
-      border: 3px solid rgba(73, 173, 33, 0.2);
+      border: 3px solid rgb(255, 166, 225);
       border-radius: 50%;
-      border-top-color: #0d9213;     
+      border-top-color: rgb(230, 34, 164);     
       animation: spin 1s  infinite linear;
       
       @keyframes spin {
