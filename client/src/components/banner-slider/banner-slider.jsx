@@ -9,13 +9,13 @@ const bannerData=[
 {title:'Lesootia K Decor', 
 subtitle:'Floral Styling Services', 
 buttonText:'Find Out More',
-link:'https://wa.me/254701032469',
+link:'https://api.whatsapp.com/send?phone=254701032469',
 imageUrl:'/images/img2.jpg'},
 
 {title:'Event Planning', 
 subtitle:'Weddings/Parties/Business', 
 buttonText:'Book Now',
-link:'https://wa.me/254701032469',
+link:'https://api.whatsapp.com/send?phone=254701032469',
 imageUrl:'/images/img3.jpg'},
 
 {title:'Shop Our Premium Flowers', 

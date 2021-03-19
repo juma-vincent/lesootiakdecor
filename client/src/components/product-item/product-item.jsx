@@ -29,7 +29,7 @@ const ProductItem = ({ item }) => {
         
       </div>
 
-      <a  href="https://wa.me/254701032469" >
+      <a  href="https://api.whatsapp.com/send?phone=254701032469" >
       <CustomButton  inverted >
         <span id='btn-text'>{btnText}</span> 
         <img  id='product-item-checkmark' height='' src={whatsapp} alt=""  style={{marginLeft:'5px'}}/>
