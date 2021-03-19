@@ -87,16 +87,20 @@
     }
     
     
-        .flowers {
+        .best-selling-products {
+            width: 80vw;
             margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            // display: grid;
-            // grid-template-columns: repeat(4, 1fr);
+            // display: flex;
+            // justify-content: center;
+            // flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             grid-gap: 13px;
             margin: 5px auto;
-            
+            // border: black solid 2px;
+            box-shadow: 0.5px 2px 5px lightgrey;
+            padding: 0 10px;
+            justify-items: center;
         
             & > div {
               margin-bottom: 30px;
@@ -112,6 +116,7 @@
             }
         
             @media screen and (max-width: 800px) {
+              width: 100vw;
               display: grid;
               grid-template-columns: 1fr 1fr;
               & > div {

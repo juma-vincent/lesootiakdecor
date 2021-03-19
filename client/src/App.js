@@ -20,6 +20,7 @@ import FuneralsPage from './pages/funerals-page/funerals-page';
 import MemorialsPage from './pages/memorials-page/memorials-page';
 import GoodWishesPage from './pages/giveaways/good-wishes/good-wishes';
 import LoveFlowersPage from './pages/giveaways/love-flowers/love-flowers';
+import GalleryPage from './pages/gallery-page/gallery-page';
 
 
 
@@ -33,7 +34,8 @@ export default ()=>{
             <Route exact path='/checkout' component={checkoutPage} />                  
             <Route path='/subcategory/:subcategoryName' component={SubcategoryProductsPage} />  
             <Route path='/admin/upload' component={UploadNewProduct} />  
-            <Route path='/category/:categoryName' component={WeddingPage} />  
+            <Route path='/category/:categoryName' component={WeddingPage} /> 
+            <Route path='/category5/:categoryName' component={GalleryPage} />  
             <Route path='/subcategory1/:subcategoryName' component={ProposalPage} />  
             <Route path='/subcategory2/:subcategoryName' component={LuncheonPage} /> 
             <Route path='/subcategory3/:subcategoryName' component={BirthdayPage} /> 

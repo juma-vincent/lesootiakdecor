@@ -66,6 +66,8 @@ const DropDownMenu = ({history, toggleOptionDropdownOpen}) => {
                   >
                       Events
                   </DropDownItem>
+
+                  
             </div>
 
           </CSSTransition>

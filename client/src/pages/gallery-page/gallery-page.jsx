@@ -1,11 +1,11 @@
 import React from "react";
-import './wedding.scss';
+import './gallery-page.scss';
 import Spinner from "../../components/spinner/spinner";
 import axios from 'axios';
 import WhatsAppButton from "../../components/whatsapp-button/whatsapp-button";
 
 
-class WeddingPage extends React.Component {
+class GalleryPage extends React.Component {
     state ={ 
         products:null
         }  
@@ -28,24 +28,20 @@ class WeddingPage extends React.Component {
       <>
         {this.state.products?
         (
-         <div className="wedding-products-page">           
-            <h1 id='wedding-title'>WEDDING</h1>
-            <div id='wedding-description'>
-            Everyone loves a wedding, seeing two become one makes our hearts full ❤️.
-            Due to diffence in tastes and preference it's hard to put a price on 
-            everyone's vision therefore contact us directly to allow us to give
-            you the best quotations for your dream wedding. We consider your budget
-             and preferences. But below are some of the magical moments we've created.
+         <div className="gallery-page-products-page">           
+            <h1 id='gallery-page-title'>{this.props.match.params.categoryName.toUpperCase()}</h1>
+            <div id='gallery-page-description'>
+           
             </div>
 
 
-            <WhatsAppButton> Contact For Pricing </WhatsAppButton>
+            {/* <WhatsAppButton> Contact For Pricing </WhatsAppButton> */}
             
-            <div className="wedding-products">            
+            <div className="gallery-page-products">            
               {this.state.products.map((product) => (
 
                 <div key={product._id}
-                className='wedding-page-image' style={{ backgroundImage: `url(${product.imageurl}) `}}>
+                className='gallery-page-image' style={{ backgroundImage: `url(${product.imageurl}) `}}>
                 </div>
 
               ))}
@@ -69,5 +65,5 @@ class WeddingPage extends React.Component {
 //   products : shop.products 
 // });
 
-// export default connect(mapStateToProps)(WeddingPage);
-export default WeddingPage;
+// export default connect(mapStateToProps)(GalleryPage);
+export default GalleryPage;

@@ -21,8 +21,7 @@ const Homepage = () => {
         <div className="homepage" style={{width:'100vw', margin: 'auto'}}> 
             <BannerSlider autoPlay={6}/>
             <h2>Best Selling Products</h2>
-            <div className='flowers' style={{width:'100vw',  boxShadow: '0.5px 2px 5px lightgrey',
-             padding: '0 10px'}}> 
+            <div className='best-selling-products' > 
                 
                 {products.map((product) => (
                         <ProductItem

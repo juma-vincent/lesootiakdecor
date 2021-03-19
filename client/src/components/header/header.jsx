@@ -25,7 +25,7 @@ const Header = ({toggleNavigationOpen , cartIsOpen, match}) => {
             
     <div className="header">
       <Link to="/" className="logo-container">
-        {/* <img src="/images/jamanu-logo.jpg" alt="" className="logo" />          */}
+        <img src="/images/logo-1.png" alt="" className="logo" />         
         
       </Link>
       
@@ -73,6 +73,9 @@ const Header = ({toggleNavigationOpen , cartIsOpen, match}) => {
                     {/* <div id='cart-icon-large-screen'>
                     < CartIcon width='25px' height='25px' style={{marginLeft:'0px'}}/>
                     </div> */}
+                    <Link to='/category5/gallery'>
+                    <Option text='Gallery'/>
+                    </Link>
                                            
                 </div>
             </div>
