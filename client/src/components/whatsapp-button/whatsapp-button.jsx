@@ -5,7 +5,9 @@ import whatsapp from '../../assets/whatsapp.svg';
 const WhatsAppButton = (props) => {
     return ( 
         <div>
-            <a href="https://wa.me/254701032469">
+            <a href="https://api.whatsapp.com/send?phone=254701032469"> 
+            {/* https://wa.me/254701032469 */}
+            
                 <button id='whatsapp-button' >
                     {props.children}
                     <img src={whatsapp} style={{marginLeft:'5px', height:'20px'}} alt=""/>
