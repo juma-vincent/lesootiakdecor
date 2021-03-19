@@ -5,7 +5,7 @@ import whatsapp from '../../assets/whatsapp.svg';
 const WhatsAppButton = (props) => {
     return ( 
         <div>
-            <a href="https://api.whatsapp.com/send?phone=254701032469"> 
+            <a href="https://api.whatsapp.com/send?phone=254796642298"> 
             {/* https://wa.me/254701032469 */}
             
                 <button id='whatsapp-button' >
