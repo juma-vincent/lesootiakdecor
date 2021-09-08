@@ -79,6 +79,11 @@ const SmallScreenDropDownMenu = ({history, handleToggle}) => {
                       handleToggle();
                     }}>Gallery
                   </DropDownItem>
+
+                  <DropDownItem  onIconClick={()=>{
+                      history.push('/contact');
+                      handleToggle()
+                    }}>Contact Us</DropDownItem>
             </div>
 
           </CSSTransition>

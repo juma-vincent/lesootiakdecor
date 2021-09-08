@@ -55,7 +55,10 @@ const Header = ({toggleNavigationOpen , cartIsOpen, match}) => {
                         <DropDownMenu />
                       </Option>
                     </span>
-                    
+
+                    <Link to="/contact" >
+                    <Option text='Contact'/>
+                    </Link> 
                     
                     {match.isExact?
                     (<>
@@ -63,9 +66,9 @@ const Header = ({toggleNavigationOpen , cartIsOpen, match}) => {
                     <Option text='About'/>
                     </CustomLink>
                     
-                    <CustomLink text='contact'>
+                    {/* <CustomLink text='contact'>
                     <Option text='Contact'/>
-                    </CustomLink>
+                    </CustomLink> */}
                     </>
                     )
                     :null

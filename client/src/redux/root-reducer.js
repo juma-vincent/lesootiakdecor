@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import cartReducer from './cart/cart.reducer';
-import NavigationToggleReducer from './modals/modals.reducer';
+import {NavigationToggleReducer, SuccessMessageToggleReducer} from './modals/modals.reducer';
 import shopReducer from './shop/shop.reducer';
 import storage from 'redux-persist/lib/storage';
 import { persistReducer } from 'redux-persist';
@@ -15,6 +15,7 @@ const persistConfig = {
 
 
 const rootReducer = combineReducers({
+    successModal: SuccessMessageToggleReducer,
     navtoggle: NavigationToggleReducer,
     shop: shopReducer,
     cart: cartReducer

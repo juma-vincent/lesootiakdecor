@@ -21,6 +21,13 @@ import MemorialsPage from './pages/memorials-page/memorials-page';
 import GoodWishesPage from './pages/giveaways/good-wishes/good-wishes';
 import LoveFlowersPage from './pages/giveaways/love-flowers/love-flowers';
 import GalleryPage from './pages/gallery-page/gallery-page';
+import EventBooking from './pages/booking-page/booking-page';
+import SuccessMessageModal from './components/modals/success-message-modal/success-message-modal';
+import ContactPage from './pages/contact-page/contact-page';
+// import Nowee from './components/modals/success-message-modal/success-message-modal'
+
+
+
 
 
 
@@ -46,12 +53,15 @@ export default ()=>{
             <Route path='/category4/:categoryName' component={MemorialsPage} /> 
             <Route path='/category2/:categoryName' component={ChurchMeetingsPage} /> 
             <Route path='/category3/:categoryName' component={GeneralMeetingsPage} /> 
+            <Route exact path='/event-booking' component={EventBooking} />
+            <Route exact path='/contact' component={ContactPage} />
             <Route path='/other' component={OtherPage} /> 
         </Switch>
 
         <Footer/>
 
         <NavigationModal/>
+        <SuccessMessageModal/>
 
         </div>
     );

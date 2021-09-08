@@ -4,9 +4,10 @@ import Features from '../../components/features/features';
 import ProductItem from '../../components/product-item/product-item';
 import './homepage.scss';
 import axios from 'axios';
+import { withRouter } from 'react-router';
 
 
-const Homepage = () => {
+const Homepage = ({history}) => {
     
      const [products, setProducts] = useState([]);
 
@@ -20,16 +21,31 @@ const Homepage = () => {
     return ( 
         <div className="homepage" style={{width:'100vw', margin: 'auto'}}> 
             <BannerSlider autoPlay={6}/>
-            <h2>Best Selling Products</h2>
+
+            {/* <h2>Best Selling Products</h2>   */}
+
+            <div className='events-section' >
+                <h2 >Let Us Help You Plan Your Event</h2>
+                <button className='homepage-button'
+                 onClick={()=>history.push('/event-booking')}
+                >Book With Us
+                </button>
+                <h4>For Any inquiries</h4>
+                <button className='homepage-button'
+                onClick={()=>history.push('/contact')}
+                >Contact Us
+                </button>
+            </div>
+            
             <div className='best-selling-products' > 
                 
-                {products.map((product) => (
+                {/* {products.map((product) => (
                         <ProductItem
                         key={product._id}
                         className="product-item"                
                         item={product}
                         />
-                    ))}
+                    ))} */}
             </div>
             <div className='about-section'>
                 <div id='about'  >
@@ -77,5 +93,5 @@ const Homepage = () => {
      );
 }
  
-export default Homepage;
+export default withRouter(Homepage);
 
