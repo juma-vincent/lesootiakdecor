@@ -21,10 +21,10 @@ class ContactPage extends Component {
         const { toggleSuccessMessageOn, history } = this.props;   
           event.preventDefault();
           emailjs.sendForm(
-              'service_6uv14c9', 
-              'template_skmqp5r', 
+              'service_iqi3ux5', 
+              'template_yaoszq9', 
               event.target,
-              'user_A4U2uL2lyS8BFuK0rqDYU'
+              'user_QmHFtyrlogy5xgJtaCrYY'
               ).then(res=>{                  
                   toggleSuccessMessageOn();
                   history.push('/')

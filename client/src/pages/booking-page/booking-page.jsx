@@ -24,10 +24,10 @@ class EventBooking extends Component {
         const { toggleSuccessMessageOn, history } = this.props;   
           event.preventDefault();
           emailjs.sendForm(
-              'service_6uv14c9', 
-              'template_7m8pgzx', 
+              'service_iqi3ux5', 
+              'template_qwu1iy7', 
               event.target,
-              'user_A4U2uL2lyS8BFuK0rqDYU'
+              'user_QmHFtyrlogy5xgJtaCrYY'
               ).then(res=>{                  
                   toggleSuccessMessageOn();
                   history.push('/')
