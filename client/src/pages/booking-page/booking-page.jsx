@@ -92,6 +92,17 @@ class EventBooking extends Component {
                         />
                     </label>
 
+                    
+                    <label htmlFor='date'><span className='label-name'>Event Date </span> 
+                        <input                      
+                        name='date'                      
+                        type='text'
+                        placeholder='DD/MM/YYYY'
+                        required                       
+                        
+                        />
+                    </label>
+
                     <label htmlFor='details'><span className='label-name'>Event Details </span> 
                     <textarea name="details" ></textarea>
                     </label>

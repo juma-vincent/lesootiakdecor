@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as TruckIcon } from "../../assets/icons/truck.svg";
 import { ReactComponent as PhoneIcon } from "../../assets/icons/phone.svg";
 import { ReactComponent as LockIcon } from "../../assets/icons/locked.svg";
-import { ReactComponent as LocationIcon } from "../../assets/icons/location.svg";
+import { ReactComponent as EventTentIcon } from "../../assets/icons/event-tent.svg";
 import { ReactComponent as TrophyIcon } from "../../assets/icons/trophy.svg";
 import { ReactComponent as HouseIcon } from "../../assets/icons/house.svg";
 import "./features.scss";
@@ -32,17 +32,7 @@ const Features = () => {
           </p>
         </div>
       </div>
-      {/* <div className="feature">
-        <LockIcon className="icon" />
-
-        <div className="content">
-          <h3>Secure Payments</h3>
-          <p>
-            We guarantee safety of your personal data when making payments
-            through an advanced payment technology.
-          </p>
-        </div>
-      </div> */}
+      
       {/* <div className="feature">
         <LocationIcon className="icon" />
         <div className="content">
@@ -60,6 +50,17 @@ const Features = () => {
           <p>
             We value your calls and that's why we take time to answer instantly.
             Call us on 0701032469.
+          </p>
+        </div>
+      </div>
+
+      <div className="feature">
+        <EventTentIcon className="icon" />
+
+        <div className="content">
+          <h3>Event Organizing</h3>
+          <p>
+            We plan and organize your events from vision to completion.
           </p>
         </div>
       </div>

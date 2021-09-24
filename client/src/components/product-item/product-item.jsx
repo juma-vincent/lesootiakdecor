@@ -9,17 +9,31 @@ const ProductItem = ({ item }) => {
 
   return (
     <div className="product-item">
+      {item.price? //if the price is falsy, expand the image background height to 85%
       <div
         className="image"
-        style={{ backgroundImage: `url(${imageurl}) ` }}
-        
+        style={{ backgroundImage: `url(${imageurl}) ` }}        
       ></div>
-      <div className="product-footer">
-        <div className="name">{name}</div>
 
-        <div className="price">
-          Ksh <span style={{color: 'black', padding:'0 3px', fontWeight:'bold'}}> {price}</span> 
-        </div>
+      : <div
+        className="image"
+        style={{ backgroundImage: `url(${imageurl}) `, height:'85%', marginBottom:'10px'}}        
+        ></div>
+      }
+
+      <div className="product-footer">
+      
+        <div className="name">{name}</div>
+        
+      
+        {item.price? 
+           <div className="price">
+           Ksh <span style={{color: 'black', padding:'0 3px', fontWeight:'bold'}}>{price}</span> 
+         </div>
+            : 
+            null
+        }
+        
 
         {item.setprice? 
             <div className="name"> A set of {' '} <span style={{color: 'black'}}>{set}</span> {' '}
@@ -29,12 +43,14 @@ const ProductItem = ({ item }) => {
         
       </div>
 
+     
       <a  href="https://api.whatsapp.com/send?phone=254701032469" >
       <CustomButton  inverted >
         <span id='btn-text'>{btnText}</span> 
         <img  id='product-item-checkmark' height='' src={whatsapp} alt=""  style={{marginLeft:'5px'}}/>
       </CustomButton>
       </a>
+        
     </div>
   );
 };

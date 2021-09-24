@@ -13,7 +13,7 @@ const Homepage = ({history}) => {
 
      useEffect(async ()=>{
         const res = await axios.post('/api/filter_product_by_popularity',
-        { popularityLevel: 'high'} );
+        { popularityLevel: 'bestseller'} );
 
         setProducts(res.data)
     }, []) ;
@@ -22,7 +22,20 @@ const Homepage = ({history}) => {
         <div className="homepage" style={{width:'100vw', margin: 'auto'}}> 
             <BannerSlider autoPlay={6}/>
 
-            {/* <h2>Best Selling Products</h2>   */}
+            
+
+            <h2>Best Selling</h2>  
+            
+            <div className='best-selling-products' > 
+                
+                {products.map((product) => (
+                        <ProductItem
+                        key={product._id}
+                        className="product-item"                
+                        item={product}
+                        />
+                    ))}
+            </div>
 
             <div className='events-section' >
                 <h2 >Let Us Help You Plan Your Event</h2>
@@ -37,22 +50,13 @@ const Homepage = ({history}) => {
                 </button>
             </div>
             
-            <div className='best-selling-products' > 
-                
-                {/* {products.map((product) => (
-                        <ProductItem
-                        key={product._id}
-                        className="product-item"                
-                        item={product}
-                        />
-                    ))} */}
-            </div>
             <div className='about-section'>
                 <div id='about'  >
 
                     <h2>About Us</h2>
                         
-                    Lesootia K Decor is the leading decor and floral styling business in the country.
+                    Lesootia K Decor is the leading event planning,
+                    decor and floral styling company in the country.
                     Our shop offers a variety of flowers for all occasions. 
                     We also provide event planning and floral styling for corporate, weddings, burials,
                     memorials.
