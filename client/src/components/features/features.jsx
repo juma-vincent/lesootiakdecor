@@ -58,7 +58,7 @@ const Features = () => {
         <EventTentIcon className="icon" />
 
         <div className="content">
-          <h3>Event Organizing</h3>
+          <h3>Perfect Event Planning</h3>
           <p>
             We plan and organize your events from vision to completion.
           </p>
