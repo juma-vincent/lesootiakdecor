@@ -1,8 +1,8 @@
-const express = require('express');
+// const express = require('express');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
 const bodyParser = require('body-parser');
-const app = express();
+// const app = express();
 
 
 require('./models/Product');
