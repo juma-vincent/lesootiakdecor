@@ -9,7 +9,8 @@ require('./models/Product');
 require('./models/Category');
 
 
-mongoose.connect(keys.mongoURI)
+// mongoose.connect(keys.mongoURI)
+console.log(keys);
 app.use(bodyParser.json());
 
 require('./routes/productRoutes')(app);
