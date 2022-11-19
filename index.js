@@ -9,7 +9,8 @@ require('./models/Product');
 require('./models/Category');
 
 
-mongoose.connect(keys.mongoURI)
+mongoose.connect('mongodb+srv://lesootia:tutie001@lesootiakdecor-prod.xpnak.mongodb.net/?retryWrites=true&w=majority')
+// mongoose.connect(keys.mongoURI)
 console.log(keys);
 app.use(bodyParser.json());
 
